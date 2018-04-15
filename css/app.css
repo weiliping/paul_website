@@ -29,7 +29,7 @@ body h1, h2, h3, h4, h5, h6{
 }
 .header-content .header-txt{
   background: transparent;
-  display: inline;
+  display: inline-block;
   z-index: 5;
   width: 100%;
   text-align: center;
@@ -160,7 +160,7 @@ body h1, h2, h3, h4, h5, h6{
   z-index: 999;
   padding: 10px;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   transform: rotate(0deg);
   -o-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -265,22 +265,37 @@ body h1, h2, h3, h4, h5, h6{
     transform: translateY(0px);
  }
 }
-.head-content .menu-content{
+.header-content .menu-content{
   position: absolute;
   color: #ffffff;
   left: 0px;
+  width: 300px;
+  height: 100%;
+  z-index: 30;
 }
 .menu-content .menu-sub{
   width: 100%;
 
 }
-.menu-content .menu-sub ul{
- font-size: 50px;
+.header-content .menu-content ul{
+  list-style: none;
+  display: inline-block;
+  padding-left: 20px;
+  -webkit-padding-start: 0px;
+  position: absolute;
+  top: 120px;
+  left: 112px;
+  z-index: 30;
+  font-weight: 100;
+  line-height: 48px;
+  font-size: 1em;
+  font-weight: 500;
 }
-.menu-content .menu-sub ul li{
+.header-content .menu-content ul li{
   width:  100px;
 }
 
-.menu-content .menu-sub ul li a{
+.header-content .menu-content ul li a{
   text-decoration: none;
+  color: #fffff;
 }
