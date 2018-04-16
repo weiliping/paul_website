@@ -94,10 +94,11 @@ body h1, h2, h3, h4, h5, h6{
 .main-content .sub-section h5{
   text-align: center;
   font-size: 1.3125em;
-  color: #727878;
+  color: #333333;
   margin-top: 12px;
   margin-bottom: 40px;
   font-weight: 100;
+  opacity: 0.7;
 }
 .main-content .sub-section .profile-table{
   border-top: 1px solid #e1e1e1;
