@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/app.css?103" rel="stylesheet" type="text/css" media="all">
+    <link href="css/app.css?127" rel="stylesheet" type="text/css" media="all">
+
   </head>
   <body>
     <div class="header-content">
@@ -13,12 +14,11 @@
       <div class="menu-content" id="main_menu_id">
         <ul>
           <li><a href="#profile">Profile</a></li>
-          <li><a href="">Experience</a></li>
-          <li><a href="">Abilities</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="menu-sub"></div>
       </div>
       <div class="header-bg"></div>
       <div class="header-txt">
@@ -30,7 +30,7 @@
       <span class="float-down-arrow icon-arrow-down" style="display: block;"></span>
     </div>
     <div class="main-content">
-      <div class="sub-section">
+      <div class="sub-section profile-section">
         <div id="profile" class="profile">
           <h2>Profile</h2>
           <h5>I'm a responsible full-stack developer and UX/UI designer.</h5>
@@ -38,7 +38,7 @@
             <div class="left">
               <h6>About Me</h6>
               <p>
-              Within the domain of web development, I have over 13 years of experience ranging from integration to back-end and front-end development making me a well rounded Full Stack developer. Using my experience of designing and developing websites and web applications, I have an excellent understanding of how technology can be used to align the requirements of both the business and the customer. My resume hosts a variety of projects tailored and catered to a diverse clientele, from big businesses to smaller companies. I am looking forward to new and challenging opportunities that will utilize my skills and add to my area of expertise. 
+              Within the domain of web development, I have over 13 years of portfolio ranging from integration to back-end and front-end development making me a well rounded Full Stack developer. Using my experience of designing and developing websites and web applications, I have an excellent understanding of how technology can be used to align the requirements of both the business and the customer. My resume hosts a variety of projects tailored and catered to a diverse clientele, from big businesses to smaller companies. I am looking forward to new and challenging opportunities that will utilize my skills and add to my area of expertise. 
               </p>
               <p>My goal is to meet interesting people from different fields and face the challenges of their businesses to achieve success.</p>
             </div>
@@ -51,21 +51,84 @@
               </div>
               <div class="row">
                 <label>Email:</label>
-                <div class="normal-txt" id="age_id">paul@amazingwei.com</div>
+                <div class="normal-txt"><a href="mailto:paul@amazingwei.com">paul@amazingwei.com</a></div>
               </div>
               <div class="row">
                 <label>Location:</label>
-                <div class="normal-txt"><a href="https://www.google.com/maps/place/Suzhou,+Jiangsu,+China/@31.3021493,120.5805406,11z/data=!4m5!3m4!1s0x35b3a0d19bd25e07:0x21e57f85bd766004!8m2!3d31.298974!4d120.585289" class="location"><span class="icon-location2"></span> Suzhou, Jiangsu Province, China</a></div>
+                <div class="normal-txt"><a class="location-link" href="https://www.google.com/maps/place/Suzhou,+Jiangsu,+China/@31.3021493,120.5805406,11z/data=!4m5!3m4!1s0x35b3a0d19bd25e07:0x21e57f85bd766004!8m2!3d31.298974!4d120.585289" class="location"><span class="icon-location2"></span> Suzhou, Jiangsu Province, China</a></div>
               </div>
               <div class="row btn-container"><a href="mailto:paul@amazingwei.com">contact</a></div>  
             </div>
             <div style="clear:both;"></div>
-            
           </div>
+        </div>
+      </div>
+      <div class="sub-section portfolio" >
+        <div id="portfolio" class="profile">
+          <h2>Portfolio</h2>
+          <div class="profile-table">
+            <div class="regular slider">
+              <div class="sub-slider">
+                <span class="icon-cog"></span>
+                <h1>Nestigator</h1>
+                <p>Nestigator is a marketplace to find rental properties in state of California. It aims to revolutionize real estate search with relevant, custom tailored local content and a comprehensive listings menu; connecting property owners with apartment seekers in a transparent and painless way.</p>
+              </div>
+              <div class="sub-slider">
+                <span class="icon-newspaper"></span>
+                <h1>EKM</h1>
+                <p>EKM (Exigen Knowledge management) is a web-based resource marketplace that aims to help corporations and individuals optimize resource acquisition, resource allocation and resource offering. The application is built upon ontology model hold as Java based services that communicate with PHP based semantic web frontend.</p>
+              </div>
+              <div class="sub-slider">
+                <span class="icon-onedrive"></span>
+                <h1>Project 2</h1>
+                <p>A banking system is a data warehouse that consolidates cash payment, cash receivables information from various banking application and interfaces. It is designed to support various data requests in a flexible way and which can host more historical data.</p>
+              </div>
+              <div class="sub-slider">
+                <span class="icon-codepen"></span>
+                <h1>WIC</h1>
+                <p>The Work Injury Compensation (WIC) module focuses on capturing the details and tracking of work injury compensation and support claims and disbursement processes that have no disputes. The system will also allow external user to submit applications such as medical reports and application form via the internet.</p>
+              </div>
+              <div class="sub-slider">
+                <span class="icon-xing2"></span>
+                <h1>WCS</h1>
+                <p>World Class Service (WCS) provides Victorian businesses with a single place to find information, ask questions and manage their dealings with government and is maintenance project.</p>
+              </div>
+              <div class="sub-slider">
+                <span class="icon-stumbleupon2"></span>
+                <h1>PORTS</h1>
+                <p>PORTS is a fully integrated computerized system that caters for prison's daily operational needs & inmate's rehabilitation and main operational functionality is admission of inmates into prison, transfer of inmate between prisons, discharge of inmates from prison and etc.</p>
+              </div>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-section" >
+        <div id="skills" class="profile">
+          <h2>Skills</h2>
+          <div class="profile-table">
+              
+          </div>    
+        </div>
+      </div>
+      <div class="sub-section" >
+        <div id="blog" class="profile">
+          <h2>Blog</h2>
+          <div class="profile-table">
+              
+          </div>    
+        </div>
+      </div>
+      <div class="sub-section">
+        <div id="contact" class="profile">
+          <h2>Contact</h2>
+          <div class="profile-table">
+              
+          </div>    
         </div>
       </div>
     </div>
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/app.js?20"></script>
+  <script src="js/app.js?22"></script>
   </body>
 </html>

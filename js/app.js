@@ -3,6 +3,12 @@ jQuery.fn.isChildOrSelf = function(obj) {
 }
 
 $(document).ready(function(){
+  // $(".regular").slick({
+  //   dots: false,
+  //   infinite: true,
+  //   slidesToShow: 2,
+  //   slidesToScroll: 2
+  // });
   set_section_height();
 });
 
@@ -39,5 +45,5 @@ function show_menu($obj){
 function set_section_height(){
   var win_h = $(window).height();
   $('.header-content').height(win_h);
-  $('.main-content .sub-section').height(win_h);
+  //$('.main-content .sub-section .profile').height(win_h);
 }
