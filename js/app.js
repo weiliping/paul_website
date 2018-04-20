@@ -10,6 +10,14 @@ $(document).ready(function(){
   //   slidesToScroll: 2
   // });
   set_section_height();
+
+  // $.get("json/data.json",{}, function(data){
+  //     console.log(" ---- data " + data.images[0].url )
+  // });
+});
+
+$(document).on('click', '#main_menu_id a', function(e){
+  hide_menu($('#hamburger-menu'));
 });
 
 $(document).on('click', '#hamburger-menu', function(e){
