@@ -4,7 +4,7 @@ html, body{
   height: 100%;
   width: 100%;
   color: #434242;
-  font-size: 0.9375em;
+  font-size: 15px;
   line-height: 1.64;
 }
 body h1, h2, h3, h4, h5, h6{
@@ -49,14 +49,14 @@ body h1, h2, h3, h4, h5, h6{
   width: 100%;
 }
 .header-content .header-txt h1{
-  font-size: 4em;
+  font-size: 56px;
   margin: 0px auto;
   padding-bottom: 8px;
   font-weight: 500;
   color: #ffffff;
 }
 .header-content .header-txt h3{
-  font-size: 2em;
+  font-size: 28px;
   margin-top: 0px;
   display: inline-block;
   border-top: 1px solid #ffffff;
@@ -80,31 +80,33 @@ body h1, h2, h3, h4, h5, h6{
   background-color: #ffffff;
 }
 .main-content .sub-section .profile{
-  max-width: 968px;
+  max-width: 1024px;
   margin: 0px auto;
 }
 .main-content .sub-section h2{
   text-align: center;
-  font-size: 3.375em;
+  font-size: 48px;
   font-weight: 100;
   color: #08c;
-  margin-top: 48px;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
+}
+.main-content .sub-section.profile-section h2{
+  margin-bottom: 0px;
+  margin-top: 72px;
+  height: 72px;
 }
 .main-content .sub-section h5{
   text-align: center;
-  font-size: 1.3125em;
+  font-size: 19px;
   color: #333333;
-  margin-top: 12px;
+  margin-top: 0px;
   margin-bottom: 40px;
   font-weight: 100;
   opacity: 0.7;
 }
 .main-content .sub-section.profile-section .profile-table{
   border-top: 1px solid #e1e1e1;
-}
-.main-content .sub-section .profile-table{
-  padding-top: 40px;
+  padding-top: 48px;
 }
 .main-content .left{
   float: left;
@@ -134,14 +136,14 @@ body h1, h2, h3, h4, h5, h6{
   line-height: 56px;
 }
 .left h6, .right h6{
-  font-size: 1.75em;
+  font-size: 24px;
   font-weight: 100;
   margin-top: 20px;
   margin-bottom: 18px;
 }
 .left p{
   text-align: justify;
-  font-size: 0.9375em;
+  font-size: 14px;
   font-weight: 100;
   line-height: 24.6px;
   margin-bottom: 0px;
@@ -157,9 +159,20 @@ body h1, h2, h3, h4, h5, h6{
   display: block;
 }
 .right .row .normal-txt{
-  font-size: 0.9375em;
+  font-size: 14px;
   font-weight: 100;
   line-height: 32px;
+}
+.right .row .normal-txt a.link-email{
+  font-size: 14px;
+  padding-left: 24px;
+}
+.right .row .normal-txt a.link-email span{
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  color: #0088cc;
+  font-size: 16px;
 }
 .right .row .normal-txt a{
   color: #434242;
@@ -176,11 +189,11 @@ body h1, h2, h3, h4, h5, h6{
   color: #08c;
 }
 .right .row .normal-txt a.location-link span.icon-location2{
-  font-size: 1.25em;
+  font-size: 20px;
   position: absolute;
   color: #0088cc;
   left: 0px;
-  top: 0px;
+  top: -3px;
 }
 #hamburger-menu{
   top: 36px;
@@ -271,7 +284,7 @@ body h1, h2, h3, h4, h5, h6{
 .float-down-arrow {
   width: auto;
   height: auto;
-  font-size: 2.5em;
+  font-size: 40px;
   color: #ffffff;
   position: absolute;
   right: 72px;
@@ -321,7 +334,7 @@ body h1, h2, h3, h4, h5, h6{
   color: #fff;
 }
 .header-content .menu-content ul li > a{
-  font-size: 1.5em;
+  font-size: 24px;
   font-weight: 100;
   color: #fff;
   line-height: 56px;
@@ -331,7 +344,7 @@ body h1, h2, h3, h4, h5, h6{
   color: #0088cc;
 }
 .profile-table > p{
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 500;
   margin-top: 48px;
 }
@@ -340,20 +353,23 @@ body h1, h2, h3, h4, h5, h6{
 }
 .right .btn-container > a{
   text-decoration: none;
-    text-align: center;
-    padding: 7px 0px;
-    border-radius: 2px;
-    width: 160px;
-    background-color: #08c;
-    display: inline-block;
-    font-size: 1.25em;
-    text-transform: uppercase;
-    font-weight: 300;
-    line-height: 26px;
-    color: #fff;
+  text-align: center;
+  /* padding: 7px 0px; */
+  border-radius: 2px;
+  width: 160px;
+  background-color: #08c;
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  vertical-align: middle;
+  overflow: hidden;
+  line-height: 42px;
+  height: 40px;
+  border: 1px solid #0088cc;
 }
 .right .btn-container > a:hover{
-  border: 1px solid #0088cc;
   background-color: #fff;
   color: #0088cc;
 }
@@ -361,7 +377,7 @@ body h1, h2, h3, h4, h5, h6{
   opacity: 0.5;
 }
 #profile.profile{
-  margin-bottom: 108px;
+  margin-bottom: 168px;
 }
 .sub-section.portfolio{
   background-color: #0077b3;
@@ -373,12 +389,28 @@ body h1, h2, h3, h4, h5, h6{
   color: #ffffff;
 }
 .main-content .sub-section.portfolio .profile-table{
-  font-size: 1.375em;
+  font-size: 22px;
   padding-top: 0px;
 }
 #portfolio::before{
   content: '';
   background: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  margin-left: -25px;
+  top: -25px;
+  left: 50%;
+}
+#skills::before{
+  content: '';
+  background: #0077b3;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -454,7 +486,7 @@ body h1, h2, h3, h4, h5, h6{
   margin-right: 0px;
 }
 .portfolio .slider .sub-slider p{
-  font-size: 0.725em;
+  font-size: 14px;
   font-weight: 300;
   line-height: 23px;
   max-height: 220px;
@@ -479,7 +511,7 @@ body h1, h2, h3, h4, h5, h6{
 }
 .portfolio .slider .sub-slider > a > span{
   color: #0088cc;
-  font-size: 0.675em;
+  font-size: 13px;
   font-weight: 500;
   float: left;
 }
@@ -491,7 +523,7 @@ body h1, h2, h3, h4, h5, h6{
   margin-left: 1px;
 }
 .portfolio .slider .sub-slider > h1{
-  font-size: 1.125em;
+  font-size: 22px;
   color: #2f2f35;
   display: block;
   line-height: 26px;
@@ -607,4 +639,76 @@ body h1, h2, h3, h4, h5, h6{
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
+}
+.main-content .sub-section.skills{
+  background-color: #f3f2f1;
+  padding-top: 32px;
+  position: relative;
+}
+.main-content .sub-section.skills h2{
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+.main-content .sub-section.skills .profile-table{
+  padding-bottom: 72px;
+}
+.sub-skills h6{
+  font-size: 22px;
+  font-weight: 100;
+  margin-bottom: 8px;
+}
+hr {
+  margin: 40px 0px 48px;
+  border-top: 1px solid #d1d1d1;
+}
+.sub-skills .section-row ul{
+  list-style: none;
+  margin-left: 0px;
+  -webkit-margin-before: 0px;
+  -webkit-padding-start: 0px;
+}
+.sub-skills .section-row ul li{
+  width: calc(50% - 60px);
+  padding-left: 28px;
+  position: relative;
+  float: left;
+  padding-right: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+.sub-skills .section-row ul li a{
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #434242;
+}
+.sub-skills .section-row ul li:nth-child(2n){
+  padding-left: 120px;
+  width: calc(50% - 158px);
+}
+.sub-skills .section-row ul li a:hover{
+  color: #0088cc;
+}
+.sub-skills .section-row ul li span.skill-label{
+  font-size: 16px;
+  font-weight: 300;
+}
+.sub-skills .section-row ul li:hover span.skill-label{
+  color: #000000;
+}
+.sub-skills .section-row ul li:nth-child(2n) span.skill-star{
+  right: 28px;
+}
+.sub-skills .section-row ul li span.skill-star{
+  position: absolute;
+  right: 64px;
+  color: #0088cc;
+  font-size: 18px;
+}
+.sub-skills .section-row ul li span.skill-star > span{
+  transition: all 0.3s;
+  font-size: 18px;
+}
+.sub-skills .section-row ul li:hover span.skill-star > span{
+  font-size: 20px;
 }

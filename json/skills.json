@@ -1,0 +1,89 @@
+[{
+    "title": "Languages",
+    "data":[
+        {
+            "name": "Mandarin(Mother tongue)",
+            "link": "",
+            "star": "5.0"
+        },
+        {
+            "name": "English(Daily use)",
+            "link": "",
+            "star": "4.0"
+        }
+    ]
+},{
+    "title": "Technical Skills",
+    "data":[
+        {
+            "name": "Ruby on Rails",
+            "link": "https://weblog.rubyonrails.org",
+            "star": "5.0"
+        },
+        {
+            "name": "React",
+            "link": "https://reactjs.org/",
+            "star": "2.5"
+        },{
+            "name": "jQuery",
+            "link": "http://jquery.com/",
+            "star": "5.0"
+        },{
+            "name": "Node.js",
+            "link": "https://nodejs.org/",
+            "star": "2.0"
+        },{
+            "name": "Bootstrap",
+            "link": "http://getbootstrap.com/",
+            "star": "5.0"
+        },{
+            "name": "Sass",
+            "link": "https://sass-lang.com/",
+            "star": "3"
+        },{
+            "name": "Google Map API",
+            "link": "https://developers.google.com/maps/",
+            "star": "2.5"
+        },{
+            "name": "Redux",
+            "link": "https://redux.js.org/",
+            "star": "2.0"
+        },{
+            "name": "JSON API",
+            "link": "http://jsonapi.org/",
+            "star": "3.5"
+        },{
+            "name": "OAuth 2.0",
+            "link": "https://oauth.net/2/",
+            "star": "2.0"
+        },{
+            "name": "ImageMagic",
+            "link": "https://www.imagemagick.org/script/index.php",
+            "star": "2.5"
+        },{
+            "name": "PostgresSQL",
+            "link": "https://www.postgresql.org/",
+            "star": "3.5"
+        },{
+            "name": "PostGIS",
+            "link": "http://postgis.net/",
+            "star": "2.5"
+        },{
+            "name": "Ruby(5 years)",
+            "link": "https://www.ruby-lang.org/en/",
+            "star": "5.0"
+        },{
+            "name": "Java(7 years)",
+            "link": "https://www.java.com/",
+            "star": "5.0"
+        },{
+            "name": "PHP(4 years)",
+            "link": "http://php.net/",
+            "star": "5.0"
+        },{
+            "name": "Java(7 years)",
+            "link": "https://www.java.com/",
+            "star": "5.0"
+        }
+    ]
+}]
