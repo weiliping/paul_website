@@ -650,16 +650,20 @@ body h1, h2, h3, h4, h5, h6{
   margin-bottom: 0px;
 }
 .main-content .sub-section.skills .profile-table{
-  padding-bottom: 72px;
+  padding-bottom: 38px;
 }
 .sub-skills h6{
   font-size: 22px;
   font-weight: 100;
   margin-bottom: 8px;
+  margin-top: 28px;
 }
 hr {
-  margin: 40px 0px 48px;
+  margin: 40px 0px 28px;
   border-top: 1px solid #d1d1d1;
+}
+.sub-skills .section-content{
+  margin-bottom: 48px;
 }
 .sub-skills .section-row ul{
   list-style: none;

@@ -16,18 +16,45 @@
     "title": "Technical Skills",
     "data":[
         {
-            "name": "Ruby on Rails",
-            "link": "https://weblog.rubyonrails.org",
+            "name": "Ruby",
+            "link": "https://www.ruby-lang.org/en/",
             "star": "5.0"
-        },
-        {
-            "name": "React",
-            "link": "https://reactjs.org/",
-            "star": "2.5"
+        },{
+            "name": "Java",
+            "link": "https://www.java.com/",
+            "star": "5.0"
+        },{
+            "name": "PHP",
+            "link": "http://php.net/",
+            "star": "4.0"
+        },{
+            "name": "Shell script",
+            "link": "https://www.shellscript.sh/",
+            "star": "2.0"
         },{
             "name": "jQuery",
             "link": "http://jquery.com/",
             "star": "5.0"
+        },{
+            "name": "Python",
+            "link": "https://www.python.org/",
+            "star": "1.0"
+        },{
+            "name": "Ruby on Rails",
+            "link": "https://weblog.rubyonrails.org",
+            "star": "5.0"
+        },{
+            "name": "Sass",
+            "link": "https://sass-lang.com/",
+            "star": "3.0"
+        },{
+            "name": "React",
+            "link": "https://reactjs.org/",
+            "star": "2.5"
+        },{
+            "name": "Redux",
+            "link": "https://redux.js.org/",
+            "star": "2.0"
         },{
             "name": "Node.js",
             "link": "https://nodejs.org/",
@@ -35,19 +62,11 @@
         },{
             "name": "Bootstrap",
             "link": "http://getbootstrap.com/",
-            "star": "5.0"
-        },{
-            "name": "Sass",
-            "link": "https://sass-lang.com/",
-            "star": "3"
+            "star": "4.0"
         },{
             "name": "Google Map API",
             "link": "https://developers.google.com/maps/",
             "star": "2.5"
-        },{
-            "name": "Redux",
-            "link": "https://redux.js.org/",
-            "star": "2.0"
         },{
             "name": "JSON API",
             "link": "http://jsonapi.org/",
@@ -57,33 +76,176 @@
             "link": "https://oauth.net/2/",
             "star": "2.0"
         },{
-            "name": "ImageMagic",
-            "link": "https://www.imagemagick.org/script/index.php",
-            "star": "2.5"
-        },{
             "name": "PostgresSQL",
             "link": "https://www.postgresql.org/",
-            "star": "3.5"
+            "star": "4.5"
         },{
             "name": "PostGIS",
             "link": "http://postgis.net/",
             "star": "2.5"
         },{
-            "name": "Ruby(5 years)",
-            "link": "https://www.ruby-lang.org/en/",
-            "star": "5.0"
+            "name": "MySQL",
+            "link": "https://www.mysql.com/",
+            "star": "4.0"
         },{
-            "name": "Java(7 years)",
-            "link": "https://www.java.com/",
-            "star": "5.0"
+            "name": "Oracle",
+            "link": "https://www.oracle.com/database/products.html",
+            "star": "3.0"
         },{
-            "name": "PHP(4 years)",
-            "link": "http://php.net/",
-            "star": "5.0"
+            "name": "DB2",
+            "link": "https://www.ibm.com/analytics/us/en/db2/",
+            "star": "2.0"
         },{
-            "name": "Java(7 years)",
-            "link": "https://www.java.com/",
-            "star": "5.0"
+            "name": "Nginx",
+            "link": "http://nginx.org/",
+            "star": "3.0"
+        },{
+            "name": "Apache HTTP Server",
+            "link": "https://httpd.apache.org/",
+            "star": "2.5"
+        },{
+            "name": "Apache Tomcat",
+            "link": "http://tomcat.apache.org/",
+            "star": "3.5"
+        },{
+            "name": "Apache Lucene",
+            "link": "https://lucene.apache.org/core/",
+            "star": "3.0"
+        },{
+            "name": "WordPress",
+            "link": "https://wordpress.org/",
+            "star": "3.0"
+        },{
+            "name": "Hibernate",
+            "link": "http://hibernate.org/",
+            "star": "2.0"
+        },{
+            "name": "Spring Framework",
+            "link": "https://spring.io/",
+            "star": "3.0"
+        },{
+            "name": "Apache iBATIS",
+            "link": "http://ibatis.apache.org/",
+            "star": "3.0"
+        },{
+            "name": "Apache Struts 1",
+            "link": "http://struts.apache.org/",
+            "star": "3.0"
         }
     ]
-}]
+},{
+    "title": "Tools",
+    "data": [
+        {
+            "name": "MS Office (10+ years)",
+            "link": "https://products.office.com/",
+            "star": "5.0"
+        },{
+            "name": "ImageMagic (3 years)",
+            "link": "https://www.imagemagick.org/script/index.php",
+            "star": "2.0"
+        },{   
+            "name": "Aptana Studio 3 (6 years)",
+            "link": "http://www.aptana.com/index.html",
+            "star": "5.0"    
+        },{
+            "name": "Eclipse (5 years)",
+            "link": "https://eclipse.org/",
+            "star": "5.0"
+        },{
+            "name": "Brackets (6 years)",
+            "link": "http://brackets.io/",
+            "star": "4.0"
+        },{
+            "name": "IntelliJ IDEA (4 years)",
+            "link": "https://www.jetbrains.com/idea/",
+            "star": "4.5"
+        },{
+            "name": "Visual Studio Code (1 year)",
+            "link": "https://code.visualstudio.com/",
+            "star": "3.0"
+        },{
+            "name": "Notepad++ (8 years)",
+            "link": "https://notepad-plus-plus.org/",
+            "star": "4.0"
+        },{
+            "name": "Webkit browsers (8 years)",
+            "link": "https://webkit.org/",
+            "star": "5.0"
+        },{
+            "name": "Firefox (10+ years)",
+            "link": "https://www.mozilla.org/en-US/firefox/new/",
+            "star": "5.0"
+        },{
+            "name": "Internet Explore (10+ years)",
+            "link": "https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads",
+            "star": "4.5"
+        },{
+            "name": "Pivotal Tracker (4 years)",
+            "link": "https://www.pivotaltracker.com/",
+            "star": "4.5"
+        },{
+            "name": "Swagger (2 years)",
+            "link": "https://swagger.io/",
+            "star": "4.5"
+        },{
+            "name": "Atlassian / Jira (3 years)",
+            "link": "https://www.atlassian.com/software/jira",
+            "star": "4.0"
+        },{
+            "name": "Git (5 years)",
+            "link": "https://git-scm.com/",
+            "star": "4.5"
+        },{
+            "name": "Sourcetree (5 years)",
+            "link": "https://www.sourcetreeapp.com/",
+            "star": "4.5"
+        },{
+            "name": "Subversion (5 years)",
+            "link": "https://subversion.apache.org/",
+            "star": "4.0"
+        },{
+            "name": "TortoiseCVS (3 years)",
+            "link": "http://www.tortoisecvs.org/",
+            "star": "3.0"
+        },{
+            "name": "Apache Maven (2 years)",
+            "link": "https://maven.apache.org/",
+            "star": "3.5"
+        },{
+            "name": "Apache Ant (4 years)",
+            "link": "http://ant.apache.org/",
+            "star": "4.5"
+        },{
+            "name": "WinSCP (5 years)",
+            "link": "https://winscp.net/eng/index.php",
+            "star": "4.5"
+        },{
+            "name": "PuTTY (5 years)",
+            "link": "https://putty.org/",
+            "star": "4.5"
+        },{
+            "name": "TOAD (3 years)",
+            "link": "https://www.quest.com/toad/",
+            "star": "3.0"
+        }
+    ]    
+},{
+    "title": "Platform",
+    "data" :[
+        {
+            "name": "Windows (10+ years)",
+            "link": "https://www.microsoft.com/en-us/windows",
+            "star": "5.0"
+        },{
+            "name": "Mac (6 years)",
+            "link": "https://www.apple.com/macos/high-sierra/",
+            "star": "5.0"
+        },{
+            "name": "CentOS (2 years)",
+            "link": "https://www.centos.org/",
+            "star": "4.0"
+        }
+    ]
+}
+]
