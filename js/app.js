@@ -21,6 +21,11 @@ $(document).on('click', '#hamburger-menu', function(e){
   }
 });
 
+$(document).on('click', '#contact-form-btn-id', function(e){
+  e.preventDefault();
+  
+});
+
 $(document).click(function(event){
   if($('#hamburger-menu').hasClass('open')){
     if(!$(event.target).isChildOrSelf('#main_menu_id') && !$(event.target).isChildOrSelf('#hamburger-menu')){
@@ -91,6 +96,7 @@ function get_sub_items(data_array){
   });
   return items_html;  
 }
+
 function get_stars(star_num){
   var star_html = '<span class="skill-star">';
   var star_nums = star_num.split(".")

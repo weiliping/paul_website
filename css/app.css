@@ -793,12 +793,11 @@ footer{
 }
 .contact-form textarea.social-msg{
   width: calc(100% - 35px);
-  height: 108px;
-  margin-top: 10px;
+  height: 132px;
+  margin-top: 12px;
   padding-top: 10px;
   color: #fff;
 }
-
 .contact-form-btn{
   height: 40px;
   color: #fff;
@@ -872,3 +871,37 @@ footer{
 .footer-content .social-row{
   padding-bottom: 4px;
 }
+.blog .profile-sub-table{
+  float: left;
+  width: 100%;
+  padding-bottom: 88px;
+}
+.blog .profile-sub-table .blog-card{
+  float: left;
+  width: 32.2%;
+  margin-right: 1.7%;
+}
+.blog .profile-sub-table .blog-card .img-container{
+  float: left;
+  overflow: hidden;
+  width: 100%;
+}
+.blog .profile-sub-table .blog-card .img-container img{
+  height: 100%;
+  width: 100%;
+}
+.blog .profile-sub-table .blog-card .txt-container{
+  box-sizing: border-box;
+  background-clip: padding-box;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding: 12px 16px;
+}
+.blog .profile-sub-table .blog-card .txt-container h6{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+    
