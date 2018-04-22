@@ -878,8 +878,9 @@ footer{
 }
 .blog .profile-sub-table .blog-card{
   float: left;
-  width: 32.2%;
+  width: 31.2%;
   margin-right: 1.7%;
+  margin-bottom: 20px;
 }
 .blog .profile-sub-table .blog-card .img-container{
   float: left;
@@ -903,5 +904,8 @@ footer{
   margin-bottom: 0px;
 }
 
+.main-content .sub-section.blog .profile h2{
+  margin-bottom: 36px;
+}
 
     
