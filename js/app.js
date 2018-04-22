@@ -5,7 +5,9 @@ jQuery.fn.isChildOrSelf = function(obj) {
 $(document).ready(function(){
   set_section_height();
   get_skills_content();
+  get_current_year();
 });
+
 
 $(document).on('click', '#main_menu_id a', function(e){
   hide_menu($('#hamburger-menu'));
@@ -27,6 +29,10 @@ $(document).click(function(event){
   }
 });
 
+function get_current_year(){
+  $('#year').html(new Date().getFullYear());
+}
+
 function hide_menu($obj){
   $obj.removeClass('open');
   $('#main_menu_id').css('left', '0px').animate({left: -320}, 350, function(){
@@ -44,7 +50,6 @@ function show_menu($obj){
 function set_section_height(){
   var win_h = $(window).height();
   $('.header-content').height(win_h);
-  //$('.main-content .sub-section .profile').height(win_h);
 }
 
 function get_skills_content(){
