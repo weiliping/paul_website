@@ -4,8 +4,8 @@
     <title>Paul - A Full Stack Web Developer</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/app.css?35" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css?3" rel="stylesheet" type="text/css" media="all">
+    <link href="css/app.css?37" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
     <div class="header-content">
@@ -238,23 +238,15 @@
           <div class="profile-table" id="contact-table-id" style="height: 280px;">
             <form action="contact/index.php" method="POST" class="contact-form" >
               <input type="text" name="name" value="" placeholder="Name*">
-              <input type="text" name="email" value="" placeholder="Email">
+              <input type="text" class="email" name="email" value="" placeholder="Email">
               <textarea type="text" class="social-msg" name="msg" placeholder="Message*"></textarea>
               <a href="#" id="contact-form-btn-id" class="contact-form-btn">Send Message</a>
             </form>
             <div class="social-content">
-              <div class="social-row">
-                <a href="https://www.facebook.com/weiliping.cn" class="facebook"><span class="icon-facebook"></span></a>
-                <a href="https://twitter.com/java_2009" class="twitter"><span class="icon-twitter"></span></a>
-                <a href="https://www.linkedin.com/in/paul-wei-64995652/" class="linkedin"><span class="icon-linkedin2"></span></a>
-              </div>
               <div class="social-menu">
                 <ul>
-                    <li><a href="#profile">Profile</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                  <li><span class="icon-phone"></span> (+86) 137 7607 7118</li>
+                  <li><span class="icon-envelop"></span> paul@amazingwei.com</li>
                 </ul>
               </div>
             </div>
@@ -264,7 +256,14 @@
       </div>
     </div>
     <footer>
-      @ <span id="year"></span> amazingwei.com 
+      <div class="footer-content">
+        <div class="social-row">
+          <a href="https://www.facebook.com/weiliping.cn" class="facebook"><span class="icon-facebook"></span></a>
+          <a href="https://twitter.com/java_2009" class="twitter"><span class="icon-twitter"></span></a>
+          <a href="https://www.linkedin.com/in/paul-wei-64995652/" class="linkedin"><span class="icon-linkedin2"></span></a>
+        </div>
+        <div class="license-row"> @ <span id="year"></span> amazingwei.com </div>
+      </div>
     </footer>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/app.js?23"></script>
