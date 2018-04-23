@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Linux nohup command",
+        "sub_title": "When using prefixing a command with nohup prevents the command from being aborted automatically when log out or exit the shell.",
+        "image": "images/20.jpg"
+    },{
+        "title": "Minify JavaScript using uglifyjs",
+        "sub_title": "UglifyJS is a JavaScript compressor/minifier written in JavaScript. ",
+        "image": "images/21.jpg"
+    },{
+        "title": "Vim tips: Search and replace",
+        "sub_title": "The :substitute command searches for a text pattern, and replaces it with a text string. ",
+        "image": "images/23.jpg"
+    },{
+        "title": "Basic Linux Commands",
+        "sub_title": "Obtaining basic knowledge of the most common commands will help you easily execute tasks via the command line.",
+        "image": "images/24.jpg"
+    },{
+        "title": "Basic Git Commands",
+        "sub_title": "Here you will find a quick, high-level overview of some of the major Git commands along with short descriptions and examples.",
+        "image": "images/26.jpg"
+    },{
+        "title": "React",
+        "sub_title": "React is flexible and provides hooks that allow you to interface with other libraries and frameworks.",
+        "image": "images/22.jpg"
+    }
+]

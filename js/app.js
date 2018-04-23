@@ -5,6 +5,7 @@ jQuery.fn.isChildOrSelf = function(obj) {
 $(document).ready(function(){
   set_section_height();
   get_skills_content();
+  get_blog_content();
   get_current_year();
 });
 
@@ -113,4 +114,24 @@ function get_stars(star_num){
   }
   star_html += '</span>';
   return star_html;
+}
+
+function get_blog_content(){
+  $.get("json/blog.json",{}, function(data){
+    $('#blog-table-id').html(get_blog_html(data));
+  });  
+}
+
+function get_blog_html(data_items){
+  var origin_html = '';
+  $.each(data_items, function(index, obj_item){
+    origin_html += '<div class="blog-card">';
+      origin_html += '<div class="img-container"><img src="' + obj_item.image + '"/></div>';
+      origin_html += '<div class="txt-container">';
+        origin_html += '<h6>' + obj_item.title + '</h6>';
+        origin_html += '<p>' + obj_item.sub_title + '</p>';
+      origin_html += '</div>';
+    origin_html += '</div>';
+  });
+  return origin_html;
 }
