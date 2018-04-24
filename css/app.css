@@ -385,7 +385,7 @@ body h1, h2, h3, h4, h5, h6{
   padding-top: 32px;
 }
 .main-content .sub-section.portfolio h2{
-  margin-top: 50px;
+  margin-top: 42px;
   color: #ffffff;
 }
 .main-content .sub-section.portfolio .profile-table{
@@ -395,38 +395,6 @@ body h1, h2, h3, h4, h5, h6{
 #portfolio::before{
   content: '';
   background: #fff;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  width: 50px;
-  height: 50px;
-  display: block;
-  position: absolute;
-  margin-left: -25px;
-  top: -25px;
-  left: 50%;
-}
-#skills::before{
-  content: '';
-  background: #0077b3;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  width: 50px;
-  height: 50px;
-  display: block;
-  position: absolute;
-  margin-left: -25px;
-  top: -25px;
-  left: 50%;
-}
-#blog::before{
-  content: '';
-  background: #f2f2f2;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -658,13 +626,13 @@ body h1, h2, h3, h4, h5, h6{
 }
 .main-content .sub-section.skills{
   background-color: #f2f2f2;
-  padding-top: 32px;
+  padding-top: 2px;
   position: relative;
 }
 .main-content .sub-section.skills h2,
 .main-content .sub-section.blog h2,
 .main-content .sub-section.contact h2{
-  margin-top: 50px;
+  margin-top: 42px;
   margin-bottom: 0px;
 }
 .main-content .sub-section.skills .profile-table{
@@ -736,11 +704,11 @@ hr {
 }
 .main-content .sub-section.blog{
   background-color: #ffffff;
-  padding-top: 32px;
+  padding-top: 0px;
   position: relative;
 }
 .main-content .sub-section.contact{
-  padding-top: 12px;
+  padding-top: 2px;
   position: relative;
   color: #e0e0e0;
   background-color: #656565;
@@ -761,6 +729,7 @@ footer{
 .contact .profile .contact-form{
   width: calc(65% - 60px);
   float: left;
+  position: relative;
 } 
 .contact .profile .social-content{
   width: calc(35% - 60px);
@@ -900,9 +869,9 @@ footer{
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  padding: 18px 16px 12px 18px;
+  padding: 20px 16px 24px 20px;
   float: left;
-  height: 124px;
+  height: 128px;
 }
 .blog .profile-sub-table .blog-card .txt-container h6{
   margin-top: 0px;
@@ -915,10 +884,87 @@ footer{
   font-size: 13px;
   font-weight: 100;
   line-height: 18px;
+  margin-top: 12px;
 }
 
 .main-content .sub-section.blog .profile h2{
   margin-bottom: 36px;
 }
-
-    
+.contact-form .error{
+  border: 1px solid rgba(255, 0, 0, 0.7);
+}
+#spinner-id{
+  position: absolute;
+  width: 152px;
+  height: 40px;
+  background-color: #0088cc;
+  bottom: 0px;
+  border-radius: 2px;
+  border: 1px solid #0088cc;
+  display: none;
+}
+.icon-spinner {
+  height: 32px;
+  width: 32px;
+  font-size: 32px;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-animation: spinner 3s infinite linear;
+  animation: spinner 3s infinite linear;
+  color: #fff;
+  margin: 0px auto;
+  margin-top: 4px;
+}
+@-webkit-keyframes spinner {
+  0%{
+    transform: rotate(0deg);
+  }
+  12.5% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(90deg);  
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  62.5% {
+    transform: rotate(225deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  87.5% {
+    transform: rotate(315deg);  
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0%{
+    transform: rotate(0deg);
+  }
+  12.5% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(90deg);  
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  62.5% {
+    transform: rotate(225deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  87.5% {
+    transform: rotate(315deg);  
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}    

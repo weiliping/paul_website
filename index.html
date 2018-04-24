@@ -4,8 +4,8 @@
     <title>Paul - A Full Stack Web Developer</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="css/style.css?3" rel="stylesheet" type="text/css" media="all">
-    <link href="css/app.css?37" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css?100" rel="stylesheet" type="text/css" media="all">
+    <link href="css/app.css?100" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
     <div class="header-content">
@@ -62,7 +62,7 @@
                   </a>
                 </div>
               </div>
-              <div class="row btn-container"><a href="mailto:paul@amazingwei.com">contact</a></div>  
+              <div class="row btn-container"><a href="#contact">contact</a></div>  
             </div>
             <div style="clear:both;"></div>
           </div>
@@ -239,10 +239,11 @@
           <h2>Contact</h2>
           <div class="profile-table" id="contact-table-id">
             <form action="contact/index.php" method="POST" class="contact-form" >
-              <input type="text" name="name" value="" placeholder="Name*">
-              <input type="text" class="email" name="email" value="" placeholder="Email">
-              <textarea type="text" class="social-msg" name="msg" placeholder="Message*"></textarea>
+              <input type="text" class="element" name="name" value="" placeholder="Name*" id="name_id">
+              <input type="text" class="element email" name="email" value="" placeholder="Email*" id="email_id">
+              <textarea type="text" class="element social-msg" name="msg" placeholder="Message*" id="msg_id"></textarea>
               <a href="#" id="contact-form-btn-id" class="contact-form-btn">Send Message</a>
+              <div id="spinner-id"><div class="icon-spinner"></div></div>
             </form>
             <div class="social-content">
               <div class="social-menu">
@@ -268,6 +269,6 @@
       </div>
     </footer>
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/app.js?23"></script>
+  <script src="js/app-1.0.1.min.js"></script>
   </body>
 </html>

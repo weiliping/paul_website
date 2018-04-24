@@ -10,7 +10,7 @@
     },{
         "title": "Vim tips: Search and replace",
         "sub_title": "The :substitute command searches for a text pattern, and replaces it with a text string. ",
-        "image": "images/23.jpg"
+        "image": "images/25.jpg"
     },{
         "title": "Basic Linux Commands",
         "sub_title": "Obtaining basic knowledge of the most common commands will help you easily execute tasks via the command line.",
@@ -20,8 +20,8 @@
         "sub_title": "Here you will find a quick, high-level overview of some of the major Git commands along with short descriptions and examples.",
         "image": "images/26.jpg"
     },{
-        "title": "React",
-        "sub_title": "React is flexible and provides hooks that allow you to interface with other libraries and frameworks.",
-        "image": "images/22.jpg"
+        "title": "Website Performance Best Practices",
+        "sub_title": "I strongly recommend font-end developer to read this article: Best Practices for Speeding Up Your Web Site.",
+        "image": "images/im15.jpg"
     }
 ]

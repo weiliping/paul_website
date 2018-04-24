@@ -9,7 +9,6 @@ $(document).ready(function(){
   get_current_year();
 });
 
-
 $(document).on('click', '#main_menu_id a', function(e){
   hide_menu($('#hamburger-menu'));
 });
@@ -20,11 +19,6 @@ $(document).on('click', '#hamburger-menu', function(e){
   }else{
     hide_menu($(this))  
   }
-});
-
-$(document).on('click', '#contact-form-btn-id', function(e){
-  e.preventDefault();
-  
 });
 
 $(document).click(function(event){
@@ -134,4 +128,57 @@ function get_blog_html(data_items){
     origin_html += '</div>';
   });
   return origin_html;
+}
+
+$(document).on('focus', '.element', function(event){
+  var $obj = $(this);
+  if($obj.hasClass('error') && $.trim($obj.val()) == ''){
+    $obj.removeClass('error');
+  }
+});
+
+$(document).on('keyup', '.element', function(event){
+  if($obj.hasClass('error') && $.trim($obj.val()) != ''){
+    $obj.removeClass('error');
+  }
+});
+
+$(document).on('click', '#contact-form-btn-id', function(event){
+  event.preventDefault;
+  if(is_empty($('#name_id')) || is_empty($('#email_id')) || is_empty($('#msg_id'))){
+    return false;
+  }else{
+    var $form = $(this).closest("form");
+    show_spinner();
+    $.post($form.attr('action'), $form.serialize(), function(data){
+      hide_spinner();
+    }, 'json');
+    return false;
+  }
+});
+function show_spinner(){
+  $('#spinner-id').show();
+}
+function hide_spinner(){
+  $('#spinner-id').hide();
+}
+function is_empty($obj){
+  if($.trim($obj.val()) == ''){
+    add_error_class($obj);
+    return true;
+  }else{
+    remove_error_class($obj);
+    return false;
+  }  
+}
+function add_error_class($obj){
+  if(!$obj.hasClass('error')){
+    $obj.addClass('error');
+  }
+}
+
+function remove_error_class($obj){
+  if($obj.hasClass('error')){
+    $obj.removeClass('error');
+  }
 }
