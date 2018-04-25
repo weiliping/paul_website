@@ -1,0 +1,93 @@
+[
+    {
+        "class_name": "icon-cog",
+        "name": "Nestigator",
+        "content": "Nestigator is a marketplace to find rental properties in state of California. It aims to revolutionize real estate search with relevant, custom tailored local content and a comprehensive listings menu; connecting property owners with apartment seekers in a transparent and painless way.",
+        "image": "images/1.jpg",
+        "sub_name": "Nestigator",
+        "sub_title": "Tools & Techniques",
+        "techniques":[
+            "Ruby On Rails",
+            "PostgresSQL, PostGIS",
+            "Amazon AWS, Nginx, Git",
+            "OAuth 2.0, JWT, JSON API",
+            "JQuery, React, Sass, Bootstrap"
+        ],
+        "job_title": "Full-Stack Developer"
+    },{
+        "class_name": "icon-newspaper",
+        "name": "EKM",
+        "content": "EKM (Exigen Knowledge management) is a web-based resource marketplace that aims to help corporations and individuals optimize resource acquisition, resource allocation and resource offering. The application is built upon ontology model hold as Java based services that communicate with PHP based semantic web frontend.",
+        "image": "images/2.jpg",
+        "sub_name": "EKM",
+        "sub_title": "Tools & Techniques",
+        "techniques":[
+            "Java, PHP, Unix Shell",
+            "MySQL, Apache, Tomcat",
+            "Maven, Archiva, Hudson, CVS",
+            "WordPress, Lucene, Ontologies",
+            "HTML, CSS, jQuery, AJAX"
+        ],
+        "job_title": "Lead Consultant"
+    },{
+        "class_name": "icon-onedrive",
+        "name": "P&V system",
+        "content": "P&V system is sub-module of Hong Kong IMMD system and is to provide automatic means to process day to day Visa and Permit applications. And main functionality is data capturing, document classification, application indexing and etc.",
+        "image": "images/3.jpg",
+        "sub_name": "P&V system",
+        "sub_title": "Tools & Techniques",
+        "techniques":[
+            "Java, JDK1.4, PL-SQL", 
+            "Weblogic, Oracle 9i, TOAD",
+            "Eclipse, CVS, Ant",
+            "Spring, iBatis, SAX/DOM, SOAP",
+            "HTML, CSS, AJAX"
+        ],
+        "job_title": "Senior Consultant"
+    },{
+        "class_name": "icon-codepen",
+        "name": "WIC",
+        "content": "The Work Injury Compensation (WIC) module focuses on capturing the details and tracking of work injury compensation and support claims and disbursement processes that have no disputes. The system will also allow external user to submit applications such as medical reports and application form via the internet.",
+        "image": "images/4.jpg",
+        "sub_name": "Work Injury Compensation",
+        "sub_title": "Tools & Techniques",
+        "techniques":[
+            "Java, JDK1.5, Jetty", 
+            "Oracle 9i",
+            "Struts, iBatis, UML",
+            "IntelliJ IDEA, Rose, CVS",
+            "HTML, CSS"
+        ],
+        "job_title": "Software Consultant"
+    },{
+        "class_name": "icon-xing2",
+        "name": "WCS",
+        "content": "World Class Service (WCS) provides Victorian businesses with a single place to find information, ask questions and manage their dealings with government and is maintenance project.",
+        "image": "images/5.jpg",
+        "sub_name": "World Class Service",
+        "sub_title": "Tools & Techniques",
+        "techniques":[
+            "Java, JDK1.5", 
+            "EJB 2.0, Hibernate",
+            "Oracle 9i, JBoss, IntelliJ IDEA",
+            "Microsoft Visio, TOAD, CVS",
+            "HTML, CSS, SAX/DOM, UML"
+        ],
+        "job_title": "Software Consultant"
+    },{
+        "class_name": "icon-stumbleupon2",
+        "name": "PORTS",
+        "content": "PORTS is a fully integrated computerized system that caters for prison's daily operational needs & inmate's rehabilitation and main operational functionality is admission of inmates into prison, transfer of inmate between prisons, discharge of inmates from prison and etc.",
+        "image": "images/6.jpg",
+        "sub_name": "PORTS",
+        "sub_title": "Tools & Techniques",
+        "techniques":[
+            "Java, JDK1.4", 
+            "Servlets, JSP, JDBC, JNDI",
+            "Weblogic, DB2",
+            "IntelliJ IDEA, TOAD, VSS",
+            "HTML, CSS"
+        ],
+        "job_title": "Software Engineer"
+    }
+]

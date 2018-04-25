@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="css/style.css?100" rel="stylesheet" type="text/css" media="all">
-    <link href="css/app.css?100" rel="stylesheet" type="text/css" media="all">
+    <link href="css/app.css?104" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
-    <div class="header-content">
+    <div class="header-content" id="header-page-id">
       <div id="hamburger-menu" class=""><span></span><span></span><span></span></div>
       <div class="menu-content" id="main_menu_id">
         <ul>
@@ -19,9 +19,9 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div class="header-bg"></div>
+      <div class="header-bg" id="header-bg-id"></div>
       <div class="header-txt">
-        <div class="head-icon"><img src="images/head_icon.jpg"/></div>
+        <div class="head-icon"><img src="images/head_icon_180.jpg"/></div>
         <h1>Paul Wei</h1>
         <h3>A Full-Stack Web Developer</h3>
       </div>
@@ -54,7 +54,7 @@
                   <a class="link-email" href="mailto:paul@amazingwei.com"><span class="icon-envelop"></span>paul@amazingwei.com</a>
                 </div>
               </div>
-              <div class="row">
+              <div class="row padding-top30">
                 <label>Location:</label>
                 <div class="normal-txt">
                   <a class="location-link" href="https://www.google.com/maps/place/Suzhou,+Jiangsu,+China/@31.3021493,120.5805406,11z/data=!4m5!3m4!1s0x35b3a0d19bd25e07:0x21e57f85bd766004!8m2!3d31.298974!4d120.585289" class="location">
@@ -72,145 +72,7 @@
         <div id="portfolio" class="profile">
           <h2>Portfolio</h2>
           <div class="profile-table">
-            <div class="regular slider">
-              <div class="sub-slider">
-                <span class="icon-cog"></span>
-                <h1>Nestigator</h1>
-                <p>Nestigator is a marketplace to find rental properties in state of California. It aims to revolutionize real estate search with relevant, custom tailored local content and a comprehensive listings menu; connecting property owners with apartment seekers in a transparent and painless way.</p>
-                <a href=""><span>SHOW MORE</span><i class="icon-chevron-thin-right"></i></a>
-                <div class="tech-hover">
-                  <img src="images/1.jpg">
-                  <div class="inner-main">
-                    <div class="inner-brd"> 
-                      <h4>Nestigator</h4>
-                      <h6>Tools & Techniques</h6>
-                      <ul>
-                        <li>Ruby On Rails</li>
-                        <li>PostgresSQL, PostGIS</li>
-                        <li>Amazon AWS, Nginx, Git</li>
-                        <li>OAuth 2.0, JWT, JSON API</li>
-                        <li>JQuery, React, Sass, Bootstrap</li>
-                      </ul>
-                      <span>Full-Stack Developer</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="sub-slider">
-                <span class="icon-newspaper"></span>
-                <h1>EKM</h1>
-                <p>EKM (Exigen Knowledge management) is a web-based resource marketplace that aims to help corporations and individuals optimize resource acquisition, resource allocation and resource offering. The application is built upon ontology model hold as Java based services that communicate with PHP based semantic web frontend.</p>
-                <a href=""><span>SHOW MORE</span><i class="icon-chevron-thin-right"></i></a>
-                <div class="tech-hover">
-                  <img src="images/2.jpg">
-                  <div class="inner-main">
-                    <div class="inner-brd"> 
-                      <h4>EKM</h4>
-                      <h6>Tools & Techniques</h6>
-                      <ul> 
-                        <li>Java, PHP, Unix Shell</li> 
-                        <li>MySQL, Apache, Tomcat</li>
-                        <li>Maven, Archiva, Hudson, CVS</li>
-                        <li>WordPress, Lucene, Ontologies</li>
-                        <li>HTML, CSS, jQuery, AJAX</li>
-                      </ul>
-                      <span>Lead Consultant</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="sub-slider">
-                <span class="icon-onedrive"></span>
-                <h1>P&V system</h1>
-                <p>P&V system is sub-module of Hong Kong IMMD system and is to provide automatic means to process day to day Visa and Permit applications. And main functionality is data capturing, document classification, application indexing and etc.</p>
-                <a href=""><span>SHOW MORE</span><i class="icon-chevron-thin-right"></i></a>
-                <div class="tech-hover">
-                  <img src="images/3.jpg">
-                  <div class="inner-main">
-                    <div class="inner-brd"> 
-                      <h4>P&V system</h4>
-                      <h6>Tools & Techniques</h6>
-                      <ul> 
-                        <li>Java, JDK1.4, PL-SQL</li> 
-                        <li>Weblogic, Oracle 9i, TOAD</li>
-                        <li>Eclipse, CVS, Ant</li>
-                        <li>Spring, iBatis, SAX/DOM, SOAP</li>
-                        <li>HTML, CSS, AJAX</li>
-                      </ul>
-                      <span>Senior Consultant</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="sub-slider">
-                <span class="icon-codepen"></span>
-                <h1>WIC</h1>
-                <p>The Work Injury Compensation (WIC) module focuses on capturing the details and tracking of work injury compensation and support claims and disbursement processes that have no disputes. The system will also allow external user to submit applications such as medical reports and application form via the internet.</p>
-                <a href=""><span>SHOW MORE</span><i class="icon-chevron-thin-right"></i></a>
-                <div class="tech-hover">
-                  <img src="images/4.jpg">
-                  <div class="inner-main">
-                    <div class="inner-brd"> 
-                      <h4>Work Injury Compensation</h4>
-                      <h6>Tools & Techniques</h6>
-                      <ul> 
-                        <li>Java, JDK1.5, Jetty</li> 
-                        <li>Oracle 9i</li>
-                        <li>Struts, iBatis, UML</li>
-                        <li>IntelliJ IDEA, Rose, CVS</li>
-                        <li>HTML, CSS</li>
-                      </ul>
-                      <span>Software Consultant</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="sub-slider">
-                <span class="icon-xing2"></span>
-                <h1>WCS</h1>
-                <p>World Class Service (WCS) provides Victorian businesses with a single place to find information, ask questions and manage their dealings with government and is maintenance project.</p>
-                <a href=""><span>SHOW MORE</span><i class="icon-chevron-thin-right"></i></a>
-                <div class="tech-hover">
-                  <img src="images/5.jpg">
-                  <div class="inner-main">
-                    <div class="inner-brd"> 
-                      <h4>World Class Service</h4>
-                      <h6>Tools & Techniques</h6>
-                      <ul> 
-                        <li>Java, JDK1.5</li> 
-                        <li>EJB 2.0, Hibernate</li>
-                        <li>Oracle 9i, JBoss, IntelliJ IDEA</li>
-                        <li>Microsoft Visio, TOAD, CVS</li>
-                        <li>HTML, CSS, SAX/DOM, UML</li>
-                      </ul>
-                      <span>Software Consultant</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="sub-slider">
-                <span class="icon-stumbleupon2"></span>
-                <h1>PORTS</h1>
-                <p>PORTS is a fully integrated computerized system that caters for prison's daily operational needs & inmate's rehabilitation and main operational functionality is admission of inmates into prison, transfer of inmate between prisons, discharge of inmates from prison and etc.</p>
-                <a href=""><span>SHOW MORE</span><i class="icon-chevron-thin-right"></i></a>
-                <div class="tech-hover">
-                  <img src="images/6.jpg">
-                  <div class="inner-main">
-                    <div class="inner-brd"> 
-                      <h4>PORTS</h4>
-                      <h6>Tools & Techniques</h6>
-                      <ul> 
-                        <li>Java, JDK1.4</li> 
-                        <li>Servlets, JSP, JDBC, JNDI</li>
-                        <li>Weblogic, DB2</li>
-                        <li>IntelliJ IDEA, TOAD, VSS</li>
-                        <li>HTML, CSS</li>
-                      </ul>
-                      <span>Software Engineer</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="regular slider" id="portfolio-table-id">
             </div>
             <div style="clear:both;"></div>
           </div>
@@ -269,6 +131,6 @@
       </div>
     </footer>
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/app-1.0.1.min.js"></script>
+  <script src="js/app-1.0.2.min.js"></script>
   </body>
 </html>

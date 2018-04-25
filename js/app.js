@@ -4,14 +4,23 @@ jQuery.fn.isChildOrSelf = function(obj) {
 
 $(document).ready(function(){
   set_section_height();
+  portfolio_html();
   get_skills_content();
   get_blog_content();
   get_current_year();
 });
 
 $(document).on('click', '#main_menu_id a', function(e){
-  hide_menu($('#hamburger-menu'));
+  close_menu();
 });
+
+function close_menu(){
+  if($('#hamburger-menu').hasClass('open')){
+    $('#hamburger-menu').removeClass('open');
+    $('#main_menu_id').hide();    
+    $('#main_menu_id').css({left: 'auto', opacity: 0, top: 'auto'});
+  }
+}
 
 $(document).on('click', '#hamburger-menu', function(e){
   if(!$(this).hasClass('open')){
@@ -35,16 +44,18 @@ function get_current_year(){
 
 function hide_menu($obj){
   $obj.removeClass('open');
-  $('#main_menu_id').css('left', '0px').animate({left: -320}, 350, function(){
+  $('#main_menu_id').css({left: '0px', opacity: 1}).animate({left: -320, opacity: 0}, 350, function(){
       $('#main_menu_id').hide();    
-      $('#main_menu_id').css('left', '');
+      $('#main_menu_id').css({left: '', opacity: 0});
   });    
 }
 
 function show_menu($obj){
   $obj.addClass('open');
   $('#main_menu_id').show();
-  $('#main_menu_id').css('left', '-320px').animate({left: 0}, 350);  
+  $('#main_menu_id').css({left: '-320px', opacity: 0}).animate({left: 0, opacity: 1}, 350, function(){
+    $('#main_menu_id').css({left: '0px', opacity: 1});
+  });
 }
 
 function set_section_height(){
@@ -181,4 +192,84 @@ function remove_error_class($obj){
   if($obj.hasClass('error')){
     $obj.removeClass('error');
   }
+}
+$(function() {
+  $(window).on('scroll', function() {
+    var scroll_top = $(this).scrollTop();
+    if($(this).scrollTop() > $('#header-page-id').innerHeight()) {
+      show_top_menu();  
+    }else{
+      hide_top_menu();      
+    }
+  });
+  get_origin_bg();
+});
+
+function show_top_menu(){
+  if(!$('#main_menu_id').hasClass("pin-header")){
+    if($('#hamburger-menu').hasClass('open')){
+      $('#hamburger-menu').removeClass('open');
+    }
+    $('#main_menu_id').addClass("pin-header");
+    $('#main_menu_id').css({top: '-32px', opacity: 0, display: 'block'}).animate({top: '0px', opacity: 1}, 200, function(){
+      $('#main_menu_id').css({left: '', top: '0px', opacity: 1});
+    });
+  }
+}
+
+function hide_top_menu(){
+  if($('#main_menu_id').hasClass("pin-header")){
+    $('#main_menu_id').removeClass("pin-header");
+    $('#main_menu_id').css({top: '', opacity: 0, display: 'none'});
+  }
+}
+
+function get_origin_bg(){
+  var image = new Image();
+  image.onload = function () {
+    $('#header-bg-id').css({'background-image': 'url(images/bg.jpg)'});
+  }
+  image.onerror = function () {
+    console.error("Cannot load image");
+  }
+  image.src = "images/bg.jpg";
+}
+
+function portfolio_html(){
+  $.get("json/portfolio.json",{}, function(data){
+    var all_html = '';
+    $.each(data, function(index, port_obj){
+      all_html += get_portfolio_html(port_obj)  
+    });
+    $('#portfolio-table-id').html(all_html);
+  });
+}
+function get_portfolio_html(p_obj){
+  var html = '<div class="sub-slider">';
+    html += '<span class="' + p_obj.class_name + '"></span>';
+    html += '<h1>' + p_obj.name + '</h1>';
+    html += '<p>' + p_obj.content + '</p>';
+    html += '<a href=""><span>SHOW MORE</span><i class="icon-chevron-thin-right"></i></a>';
+    html += '<div class="tech-hover">';
+      html += '<img src="' + p_obj.image + '">';
+      html += '<div class="inner-main">';
+        html += '<div class="inner-brd">';
+          html += '<h4>' + p_obj.sub_name + '</h4>';
+          html += '<h6>' + p_obj.sub_title + '</h6>';
+          html += get_techniques_html(p_obj.techniques);                 
+          html += '<span>' + p_obj.job_title + '</span>';
+        html += '</div>';
+      html += '</div>';
+    html += '</div>';
+  html += '</div>';
+  return html;
+}
+
+function get_techniques_html(tech_array){
+  var tech_html = '<ul>';
+  $.each(tech_array, function(index, tech_str){
+    tech_html += '<li>' + tech_str + '</li>';
+  });
+  tech_html += '</ul>';
+  return tech_html;
 }

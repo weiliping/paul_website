@@ -1,15 +1,15 @@
 [
     {
         "title": "Linux nohup command",
-        "sub_title": "When using prefixing a command with nohup prevents the command from being aborted automatically when log out or exit the shell.",
+        "sub_title": "You process or executing shell script will get killed when logout from the session or network error occurred. You can use nohup to avoid this.",
         "image": "images/20.jpg"
     },{
         "title": "Minify JavaScript using uglifyjs",
-        "sub_title": "UglifyJS is a JavaScript compressor/minifier written in JavaScript. ",
+        "sub_title": "UglifyJS can be used to combine and minify JavaScript assets so that they require less HTTP requests and make your site load faster.",
         "image": "images/21.jpg"
     },{
         "title": "Vim tips: Search and replace",
-        "sub_title": "The :substitute command searches for a text pattern, and replaces it with a text string. ",
+        "sub_title": "When you want to search for a string of text and replace it with another string of text, you can use the syntax :[range]s/search/replace/.",
         "image": "images/25.jpg"
     },{
         "title": "Basic Linux Commands",
@@ -22,6 +22,6 @@
     },{
         "title": "Website Performance Best Practices",
         "sub_title": "I strongly recommend font-end developer to read this article: Best Practices for Speeding Up Your Web Site.",
-        "image": "images/im15.jpg"
+        "image": "images/27.jpg"
     }
 ]
