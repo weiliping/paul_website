@@ -1016,26 +1016,30 @@ footer{
 
 @media (min-width: 0px) and (max-width: 768px){
   #hamburger-menu{
-    top: 36px;
-    width: 52px;
+    top: 28px;
+    width: 26px;
     height: 32px;
-    left: 42px;
+    left: 18px;
   }
   #hamburger-menu span{
-    height: 6px;
-    width: 52px;
+    height: 3px;
+    width: 26px;
   }
   #hamburger-menu span:nth-child(1){
     top: 10px;
   }
   #hamburger-menu span:nth-child(2){
-    top: 22px;
+    top: 18px;
   }
   #hamburger-menu span:nth-child(3){
-    top: 34px;
+    top: 26px;
+  }
+  #hamburger-menu.open span:nth-child(1){
+    left: 2px;
+    top: 6px;
   }
   #hamburger-menu.open span:nth-child(3), #hamburger-menu.fakeopen span:nth-child(3){
-    top: 44px;
+    top: 25px;
   }
   #profile.profile{
     padding-left: 25px;
@@ -1049,6 +1053,7 @@ footer{
   .portfolio .slider .sub-slider{
     width: calc(100% - 50px);
     margin-right: 0px;
+    padding: 28px 25px 24px 25px;
   }
   .main-content .left{
     width: 100%;
@@ -1064,12 +1069,38 @@ footer{
     padding-top: 32px;
   }
   .main-content .right > .row.padding-top30{
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .main-content .right > .row.padding-top30 label{
+    width: 80px;
+  }
+  .main-content .right > .row.padding-top30 .normal-txt{
+    width: calc(100% - 80px);
   }
   .main-content .right .row{
     float: left;
-    width: calc(50% - 4px);
+    width: 100%;
+    margin-top: 10px;
   }
+  .main-content .right .row label{
+    float: left;
+    width: 64px;
+    margin-bottom: 0px;
+    line-height: 30px;
+  }
+  .main-content .right .row .normal-txt{
+    float: left;
+    width: calc(100% - 64px);
+    line-height: 30px;
+  }
+  .right .row .normal-txt a.link-email{
+    padding-left: 0px;
+  }
+  .right .row .normal-txt a.link-email span{
+    display: none;
+  }
+
   .right .btn-container{
     margin-top: 28px;
   }
@@ -1078,9 +1109,9 @@ footer{
     padding-right: 25px;
   }
   .sub-skills .section-row ul li, .sub-skills .section-row ul li:nth-child(2n){
-    width: calc(100% -  28px);
+    width: 100%;
     padding-right: 0px;
-    padding-left: 28px;
+    padding-left: 0px;
   }
   .sub-skills .section-row ul li span.skill-star{
     right: 0px;
@@ -1111,5 +1142,75 @@ footer{
   }
   .header-content .menu-content.pin-header{
     display: none !important;
+  }
+  .header-content .header-txt h1{
+    font-size: 32px;
+  }
+  .header-content .header-txt h3{
+    font-size: 20px;
+  }
+  .float-down-arrow {
+    right: 28px;
+    top: calc(100vh - 60px);
+    font-size: 32px;
+  }
+  .right .row .normal-txt a.location-link{
+    padding-left: 0px;
+  }
+  .right .row .normal-txt a.location-link span.icon-location2{
+    display: none;
+  }
+  .right .btn-container > a{
+    background-color: #fff;
+    color: #0088cc;
+  }
+  .main-content .sub-section.portfolio h2{
+    margin-top: 10px;
+  }
+  .header-content .menu-content{
+    width: 160px;
+  }
+  .header-content .menu-content ul{
+    left: 42px;
+    top: 72px;
+  }
+  .header-content .menu-content ul li > a{
+    font-size: 18px;
+  }
+  #portfolio::before{
+    display: none;
+  }
+  .main-content .sub-section h5{
+    line-height: 26px;
+    margin-bottom: 28px;
+  }
+  .left h6, .right h6{
+    margin-bottom: 0px;
+  }
+  .contact-form input, .contact-form textarea{
+    width: calc(100% - 25px);
+    float: left;
+  }
+  .contact-form input.email{
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .contact-form textarea.social-msg{
+    width: calc(100% - 25px);
+  }
+  .contact .profile a{
+    width: 100%;
+    background-color: #0088cc;
+    border: 1px solid #0088cc;
+    text-transform: uppercase;
+  }
+  #spinner-id{
+    width: 100%;
+  }
+  .main-content .sub-section.profile-section .profile-table{
+    padding-top: 10px;
+  }
+  .main-content .sub-section.profile-section h2{
+    margin-top: 36px;
   }
 }
