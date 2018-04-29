@@ -319,7 +319,7 @@ body h1, h2, h3, h4, h5, h6{
 }
 .header-content .menu-content{
   left: 0px;
-  width: 320px;
+  width: 288px;
   height: 100%;
   position: absolute;
   z-index: 32;
@@ -332,8 +332,8 @@ body h1, h2, h3, h4, h5, h6{
   display: inline-block;
   padding-left: 20px;
   -webkit-padding-start: 0px;
-  top: 120px;
-  left: 112px;
+  top: 128px;
+  left: 106px;
   position: absolute;
   z-index: 33;
 }
@@ -342,10 +342,10 @@ body h1, h2, h3, h4, h5, h6{
   color: #fff;
 }
 .header-content .menu-content ul li > a{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 100;
   color: #fff;
-  line-height: 56px;
+  line-height: 62px;
   text-decoration: none;
 }
 .header-content .menu-content ul li > a:hover{
@@ -1201,11 +1201,12 @@ footer{
     width: 160px;
   }
   .header-content .menu-content ul{
-    left: 42px;
+    left: 52px;
     top: 72px;
   }
   .header-content .menu-content ul li > a{
     font-size: 18px;
+    line-height: 52px;
   }
   #portfolio::before{
     display: none;
@@ -1263,9 +1264,11 @@ footer{
   }
   .header-content .menu-content ul{
     left: 82px;
+    top: 118px;
   }
   .header-content .menu-content ul li > a{
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 54px;
   }
   .main-content .sub-section .profile{
     padding-left: 20px;
@@ -1294,6 +1297,7 @@ footer{
   .portfolio .slider .sub-slider{
     width: calc(48% - 64px);
     margin-right: 4%;
+    margin-bottom: 28px;
   }
   .portfolio .slider :nth-child(3n+3){
     margin-right: 4%;
@@ -1308,7 +1312,7 @@ footer{
   .blog .profile-sub-table .blog-card{
     width: 48%;
     margin-right: 4%;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
   .blog .profile-sub-table :nth-child(2n+2){
     margin-right: 0px;
