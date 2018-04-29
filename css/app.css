@@ -408,12 +408,12 @@ body h1, h2, h3, h4, h5, h6{
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  width: 50px;
-  height: 50px;
+  width: 28px;
+  height: 28px;
   display: block;
   position: absolute;
-  margin-left: -25px;
-  top: -25px;
+  margin-left: -14px;
+  top: -14px;
   left: 50%;
 }
 .portfolio section.regular.slider{
@@ -897,7 +897,6 @@ footer{
   line-height: 18px;
   margin-top: 12px;
 }
-
 .main-content .sub-section.blog .profile h2{
   margin-bottom: 36px;
 }
@@ -914,7 +913,7 @@ footer{
   border: 1px solid #0088cc;
   display: none;
 }
-.icon-spinner {
+.icon-spinner{
   height: 32px;
   width: 32px;
   font-size: 32px;
@@ -1017,7 +1016,34 @@ footer{
   padding-right: 16px;
   line-height: 32px;
 }
-
+.redirect_to_header{
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 50;
+  width: 32px;
+  height: 32px;
+}
+.redirect_to_header a{
+  text-align: center;
+  text-decoration: none;
+  color: #0088cc;
+  font-size: 28px;
+  display: inline-flex;
+}
+.redirect_to_header a:hover{
+  color: #0078ae;
+}
+.redirect_to_header.white a{
+  color: #ffffff;
+}
+.redirect_to_header.white a:hover{
+  color: rgba(255, 255, 255, 0.6);
+}
+.redirect_to_header a span{
+  transform: rotate(270deg);
+  display: inline-block;
+}
 @media (min-width: 0px) and (max-width: 767px){
   #hamburger-menu{
     top: 28px;
@@ -1223,6 +1249,9 @@ footer{
   .blog .profile-sub-table{
     padding-bottom: 72px;
   }
+  #redirect_to_header{
+    display: none !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 968px){
   #hamburger-menu{
@@ -1336,6 +1365,9 @@ footer{
   }
   #profile.profile{
     margin-bottom: 128px;
+  }
+  #redirect_to_header{
+    display: none !important;
   }
 }
 @media (min-width: 969px) and (max-width: 1052px){

@@ -1,6 +1,7 @@
 jQuery.fn.isChildOrSelf = function(obj) {
   return (this.closest(obj).length > 0)  
 }
+var heights = [];
 $(document).ready(function(){
   set_section_height();
   portfolio_html();
@@ -8,6 +9,23 @@ $(document).ready(function(){
   get_blog_content();
   get_current_year();
   get_origin_bg();
+  get_heights();
+  $(window).on('scroll', function() {
+    var scroll_top = $(this).scrollTop();
+    var win_h = heights[0];
+    var min_blue_top = heights[1] + heights[2];
+    var max_blue_top = min_blue_top + heights[3];
+    var scroll_win_top = win_h + scroll_top - 60;
+    if(scroll_win_top >= min_blue_top && scroll_win_top <= max_blue_top){
+      if(!$(".redirect_to_header").hasClass("white")){
+        $(".redirect_to_header").addClass("white");
+      }
+    }else{
+      if($(".redirect_to_header").hasClass("white")){
+        $(".redirect_to_header").removeClass("white");
+      }
+    }
+  });
 });
 $(document).on('click', '#main_menu_id a', function(e){
   close_menu();
@@ -137,7 +155,6 @@ $(document).on('keyup', '.element', function(event){
     $obj.removeClass('error');
   }
 });
-
 $(document).on('click', '#contact-form-btn-id', function(event){
   event.preventDefault;
   if(is_empty($('#name_id')) || is_empty($('#email_id')) || is_empty($('#msg_id'))){
@@ -176,12 +193,25 @@ function remove_error_class($obj){
     $obj.removeClass('error');
   }
 }
+function get_heights(){
+  var win_h = $(window).height();
+  var header_h = $('#header-page-id').innerHeight();
+  var profile_h = $('#profile').innerHeight() + 168;
+  var portfolio_h = $('#portfolio').parent().innerHeight();
+  heights = [win_h, header_h, profile_h, portfolio_h];
+  return heights;
+}
 $(function() {
+  $(window).on('resize', function(){
+    set_section_height();
+  });
   $(window).on('scroll', function() {
-    if($(this).scrollTop() > ($('#header-page-id').innerHeight()-32)) {
-      show_top_menu();  
+    if($(this).scrollTop() > ($('#header-page-id').innerHeight()- 40)) {
+      show_top_menu();
+      $('#redirect_to_header').show();  
     }else{
-      hide_top_menu();      
+      hide_top_menu();
+      $('#redirect_to_header').hide();
     }
   });
 });
@@ -227,6 +257,7 @@ function portfolio_html(){
       all_html += get_portfolio_html(port_obj)  
     });
     $('#portfolio-table-id').html(all_html);
+    get_heights();
   });
 }
 function get_portfolio_html(p_obj){
