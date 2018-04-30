@@ -76,6 +76,10 @@
             "link": "https://oauth.net/2/",
             "star": "2.0"
         },{
+            "name": "JWT",
+            "link": "https://jwt.io/",
+            "star": "2.0"
+        },{
             "name": "PostgreSQL",
             "link": "https://www.postgresql.org/",
             "star": "4.5"
