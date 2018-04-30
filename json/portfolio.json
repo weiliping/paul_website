@@ -8,7 +8,7 @@
         "sub_title": "Tools & Techniques",
         "techniques":[
             "Ruby On Rails",
-            "PostgresSQL, PostGIS",
+            "PostgreSQL, PostGIS",
             "Amazon AWS, Nginx, Git",
             "OAuth 2.0, JWT, JSON API",
             "JQuery, React, Sass, Bootstrap"
