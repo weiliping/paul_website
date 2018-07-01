@@ -1,25 +1,31 @@
 [
-    {
+    {   
+        "id": 10,
         "title": "Linux nohup command",
         "sub_title": "You process or executing shell script will get killed when logout from the session or network error occurred. You can use nohup to avoid this.",
         "image": "images/20.jpg"
     },{
+        "id": 11,
         "title": "Minify JavaScript using uglifyjs",
         "sub_title": "UglifyJS can be used to combine and minify JavaScript assets so that they require less HTTP requests and make your site load faster.",
         "image": "images/21.jpg"
     },{
+        "id": 12,
         "title": "Vim tips: Search and replace",
         "sub_title": "When you want to search for a string of text and replace it with another string of text, you can use the syntax :[range]s/search/replace/.",
         "image": "images/25.jpg"
     },{
+        "id": 13,
         "title": "Basic Linux Commands",
         "sub_title": "Obtaining basic knowledge of the most common commands will help you easily execute tasks via the command line.",
         "image": "images/24.jpg"
     },{
+        "id": 14,
         "title": "Basic Git Commands",
         "sub_title": "Here you will find a quick, high-level overview of some of the major Git commands along with short descriptions and examples.",
         "image": "images/26.jpg"
     },{
+        "id": 15,
         "title": "Website Performance Best Practices",
         "sub_title": "I strongly recommend font-end developer to read this article: Best Practices for Speeding Up Your Web Site.",
         "image": "images/27.jpg"

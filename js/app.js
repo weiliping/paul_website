@@ -135,8 +135,12 @@ function get_blog_html(data_items) {
   var origin_html = '';
   $.each(data_items, function (index, obj_item) {
     origin_html += '<div class="blog-card">';
-    origin_html += '<div class="img-container"><img src="' + obj_item.image + '"/></div>';
-    origin_html += '<div class="txt-container">';
+    origin_html += '<div class="img-container">';
+      origin_html += '<a href="#" class="img_link" onClick="showBlogDetails(' + obj_item.id + ')">';
+        origin_html += '<img src="' + obj_item.image + '"/>';
+      origin_html += '</a>';
+    origin_html += '</div>';
+    origin_html += '<div class="txt-container" onClick="showBlogDetails(' + obj_item.id + ')">';
     origin_html += '<h6>' + obj_item.title + '</h6>';
     origin_html += '<p>' + obj_item.sub_title + '</p>';
     origin_html += '</div>';
