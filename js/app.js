@@ -1,6 +1,7 @@
 jQuery.fn.isChildOrSelf = function (obj) {
   return (this.closest(obj).length > 0)
 }
+
 var heights = [];
 $(document).ready(function () {
   set_section_height();
@@ -42,6 +43,15 @@ function close_menu() {
     });
   }
 }
+
+$(document).keyup(function (e) {
+  if (e.keyCode == 27) {
+    if (!$("#blog_content_id").is(":hidden")) {
+      hideBlogWindow();
+    }
+  }
+});
+
 $(document).on('click', '#hamburger-menu', function (e) {
   if (!$(this).hasClass('open')) {
     show_menu($(this))
@@ -60,25 +70,40 @@ $(document).on('click', '.blog_link', function (e) {
   showBlogWindow();
 });
 
-function hideBlogWindow(){
+function hideBlogWindow() {
   $("#blog_content_id").hide();
-  $('body').css("overflow", "auto");
+  $('body').css("overflow", "");
+  $('body').css({
+    "overflow": "auto",
+    "width": "100%"
+  });
+  $('#main_menu_id').show();
 }
 
-function showBlogWindow(){
+function showBlogWindow() {
   $("#blog_content_id").show();
-  $('body').css("overflow", "hidden");
+  $('#main_menu_id').hide();
+  $('body').css({
+    "overflow": "hidden",
+    "width": "calc(100% - 15px)"
+  });
 }
 
-function showBlogDetails(event, blog_id){
+function showBlogDetails(event, blog_id) {
   event.preventDefault();
-  showBlogWindow();  
+  showBlogWindow();
 }
 
 $(document).click(function (event) {
   if ($('#hamburger-menu').hasClass('open')) {
     if (!$(event.target).isChildOrSelf('#main_menu_id') && !$(event.target).isChildOrSelf('#hamburger-menu')) {
       hide_menu($('#hamburger-menu'));
+    }
+  }
+
+  if (!$("#blog_content_id").is(":hidden")) {
+    if (!$(event.target).isChildOrSelf('.blog_link') && !$(event.target).isChildOrSelf('#blog_sub_content_id')) {
+      hideBlogWindow();
     }
   }
 });
