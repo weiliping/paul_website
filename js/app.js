@@ -226,7 +226,7 @@ function get_blog_html(data_items) {
     origin_html += '</a>';
     origin_html += '</div>';
     origin_html += '<div class="txt_link txt-container" data-id="' + obj_item.id + '">';
-    origin_html += '<h6>' + obj_item.title + '</h6>';
+    origin_html += '<a href="#" class="h6">' + obj_item.title + '</a>';
     origin_html += '<p>' + obj_item.sub_title + '</p>';
     origin_html += '</div>';
     origin_html += '</div>';

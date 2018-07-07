@@ -1037,12 +1037,18 @@ footer {
   cursor: pointer;
 }
 
-.blog .profile-sub-table .blog-card .txt-container h6 {
+.blog .profile-sub-table .blog-card .txt-container a.h6 {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #0088cc;
+  text-decoration: none;
+}
+
+.blog .profile-sub-table .blog-card .txt-container a.h6:hover {
+  color: #006ea5;
 }
 
 .blog .profile-sub-table .blog-card .txt-container p {

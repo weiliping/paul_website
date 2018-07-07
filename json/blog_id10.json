@@ -1,0 +1,6 @@
+{   
+    "id": 10,
+    "title": "Linux nohup command",
+    "sub_title": "You process or executing shell script will get killed when logout from the session or network error occurred. You can use nohup to avoid this.",
+    "image": "images/20.jpg"
+}
