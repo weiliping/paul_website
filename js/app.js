@@ -87,6 +87,7 @@ function showBlogWindow() {
     "overflow": "hidden",
     "width": "calc(100% - 15px)"
   });
+  $("#blog_body_id").niceScroll();
 }
 
 function showBlogDetails(event, blog_id) {
