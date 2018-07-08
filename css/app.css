@@ -1320,7 +1320,7 @@ footer {
   padding-bottom: 18px;
 }
 
-.blog_content .blog_sub_content .blog_body p a{
+.blog_content .blog_sub_content .blog_body p a {
   text-decoration: underline;
   color: #434242;
   line-height: 22px;
@@ -1332,7 +1332,7 @@ footer {
   position: relative;
 }
 
-.blog_content .blog_sub_content .blog_body p a:hover{
+.blog_content .blog_sub_content .blog_body p a:hover {
   font-size: 14px;
   text-decoration: underline;
   color: #0088cc;
@@ -1363,6 +1363,49 @@ footer {
   margin-bottom: 8px;
   font-size: 15px;
   font-weight: 700;
+}
+
+.blog_content .blog_sub_content .blog_body table {
+  font-size: 14px;
+  font-weight: 300;
+  display: inline-table;
+  border-spacing: 0px;
+  border-collapse: unset;
+}
+
+.blog_content .blog_sub_content .blog_body table tr {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.blog_content .blog_sub_content .blog_body table tr th {
+  text-align: left;
+  border-bottom: 1px solid #e3e3e3;
+  padding-top: 6px;
+  padding-bottom: 10px;
+}
+
+.blog_content .blog_sub_content .blog_body table tr:hover td{
+  background-color: #f0f0f0;
+}
+
+.blog_content .blog_sub_content .blog_body table tr td {
+  border-bottom: 1px solid #e3e3e3;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  line-height: 18px;
+  border-top: 0px none;
+}
+
+.blog_content .blog_sub_content .blog_body table tr td span.code{
+  font-weight: bold;
+}
+
+.blog_content .blog_sub_content .blog_body table tr td:first-child {
+  width: 35%;
+}
+
+.blog_content .blog_sub_content .blog_body table tr td:last-child {
+  width: 65%;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
