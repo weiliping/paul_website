@@ -7,7 +7,7 @@
     <meta name="Description" content="Paul Wei is a responsible full-stack web developer and UX/UI designer. Has more than 13 years experience in developing and designing web app.">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="css/style.css?101" rel="stylesheet" type="text/css" media="all">
-    <link href="css/app.css?39" rel="stylesheet" type="text/css" media="all">
+    <link href="css/app.css?44" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
     <div class="header-content" id="header-page-id">
@@ -124,43 +124,6 @@
     </div>
     <div class="blog_content" id="blog_content_id" style="display: none;">
       <div class="blog_sub_content" id="blog_sub_content_id">
-        <a href="#" id="blog_close_id"><span class="icon-close"></span></a>
-        <div class="blog_header">
-          <img src="images/20.jpg"/>
-          <h4>Linux nohup command</h4>
-        </div>
-        <div class="blog_body" id="blog_body_id">
-          <h6>About nohup</h6>
-          <p>
-            You process or executing shell script will get killed when logout from the session or network error occurred. You can use nohup to avoid this. 
-          </p>
-          <p>
-            nohup is a POSIX command to ignore the HUP (hangup) signal. The hangup (HUP) signal, which is normally sent to a process to inform it that the user has logged off (or "hung up"), is intercepted by nohup, allowing the process to continue running.
-          </p>
-          <h6>Syntax</h6>
-          <p class="syntax">
-            nohup command [command-argument ...]
-          </p>
-          <h6>Examples</h6>
-          <p class="syntax">
-            $ nohup abcd &</br>
-            $ exit
-          </p>
-          <p>
-            Run the command(abcd). It will not receive input. All output, including any error messages, will be written to the file nohup.out in the working directory, or in your home directory. If abcd is running when you log out or close the terminal, abcd will not terminate.
-          </p>
-          <p>When using &, you'll see the bash job ID in brackets, and the process ID (PID) listed after. For example: </p>
-          <p class="syntax">[1] 25132</p>
-          <p>
-              You can use the PID to terminate the process prematurely. For instance, to send it the TERM (terminate) signal with the kill command:
-          </p>
-          <p class="syntax">$ kill -9 25132</p>
-          <h6>Related commands</h6>
-          <p>
-              nohup is often used in combination with the nice command to run processes on a lower priority.
-          </p>
-          <p class="syntax">$ nohup nice abcd &</p>
-        </div>
       </div>
     </div>
     <footer>
@@ -178,6 +141,6 @@
     </footer>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery.nicescroll.min.js"></script>
-  <script src="js/app.js?13"></script>
+  <script src="js/app.js?21"></script>
   </body>
 </html>

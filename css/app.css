@@ -1320,6 +1320,25 @@ footer {
   padding-bottom: 18px;
 }
 
+.blog_content .blog_sub_content .blog_body p a{
+  text-decoration: underline;
+  color: #434242;
+  line-height: 22px;
+  right: auto;
+  top: auto;
+  font-size: 14px;
+  background-color: transparent;
+  display: inline;
+  position: relative;
+}
+
+.blog_content .blog_sub_content .blog_body p a:hover{
+  font-size: 14px;
+  text-decoration: underline;
+  color: #0088cc;
+  font-weight: 300;
+}
+
 .blog_content .blog_sub_content .blog_body p {
   font-size: 14px;
   font-weight: 300;

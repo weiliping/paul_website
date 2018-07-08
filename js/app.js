@@ -67,6 +67,8 @@ $(document).on('click', '#blog_close_id', function (e) {
 
 $(document).on('click', '.blog_link', function (e) {
   e.preventDefault();
+  var blog_id = $(this).data('id');
+  blog_detail(blog_id);
   showBlogWindow();
 });
 
@@ -87,13 +89,14 @@ function showBlogWindow() {
     "overflow": "hidden",
     "width": "calc(100% - 15px)"
   });
-  $("#blog_body_id").niceScroll();
 }
 
-function showBlogDetails(event, blog_id) {
-  event.preventDefault();
+$(document).on('click', '.txt_link', function (e) {
+  e.preventDefault();
+  var blog_id = $(this).data('id');
+  blog_detail(blog_id);
   showBlogWindow();
-}
+});
 
 $(document).click(function (event) {
   if ($('#hamburger-menu').hasClass('open')) {
@@ -103,7 +106,7 @@ $(document).click(function (event) {
   }
 
   if (!$("#blog_content_id").is(":hidden")) {
-    if (!$(event.target).isChildOrSelf('.blog_link') && !$(event.target).isChildOrSelf('#blog_sub_content_id')) {
+    if (!$(event.target).isChildOrSelf('.blog_link') && !$(event.target).isChildOrSelf('.txt_link') && !$(event.target).isChildOrSelf('#blog_sub_content_id')) {
       hideBlogWindow();
     }
   }
@@ -225,8 +228,8 @@ function get_blog_html(data_items) {
     origin_html += '<img src="' + obj_item.image + '"/>';
     origin_html += '</a>';
     origin_html += '</div>';
-    origin_html += '<div class="txt_link txt-container" data-id="' + obj_item.id + '">';
-    origin_html += '<a href="#" class="h6">' + obj_item.title + '</a>';
+    origin_html += '<div class="txt-container">';
+    origin_html += '<a href="#" class="txt_link h6" data-id="' + obj_item.id + '">' + obj_item.title + '</a>';
     origin_html += '<p>' + obj_item.sub_title + '</p>';
     origin_html += '</div>';
     origin_html += '</div>';
@@ -299,6 +302,7 @@ function get_heights() {
   heights = [win_h, header_h, profile_h, portfolio_h];
   return heights;
 }
+
 $(function () {
   $(window).on('resize', function () {
     set_section_height();
@@ -409,4 +413,25 @@ function get_techniques_html(tech_array) {
   });
   tech_html += '</ul>';
   return tech_html;
+}
+
+function blog_detail(id) {
+  var url = 'json/blog_id' + id + '.json';
+  $.get(url, {}, function (data) {
+    var blog_html = get_blog_detail(data);
+    $('#blog_sub_content_id').html(blog_html);
+    $("#blog_body_id").niceScroll();
+  });
+}
+
+function get_blog_detail(blog_json) {
+  var blog_detail = '<a href="#" id="blog_close_id"><span class="icon-close"></span></a>';
+  blog_detail += '<div class="blog_header">';
+  blog_detail += '<img src="' + blog_json.image + '"/>';
+  blog_detail += '<h4>' + blog_json.title + '</h4>';
+  blog_detail += '</div>';
+  blog_detail += '<div class="blog_body" id="blog_body_id">';
+  blog_detail += blog_json.body_html;
+  blog_detail += '</div>';
+  return blog_detail;
 }
