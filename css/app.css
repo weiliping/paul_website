@@ -1341,7 +1341,7 @@ footer {
 
 .blog_content .blog_sub_content .blog_body p {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 100;
   margin-top: 10px;
   line-height: 22px;
 }
@@ -1362,7 +1362,7 @@ footer {
   margin-top: 16px;
   margin-bottom: 8px;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .blog_content .blog_sub_content .blog_body table {
@@ -1419,6 +1419,15 @@ footer {
 
 .blog_content .blog_sub_content ul li a:hover {
   color: #0088cc;
+  font-weight: 100;
+}
+
+.blog_content .blog_sub_content .blog_body p a.article_links{
+  font-weight: 100;
+}
+
+.blog_content .blog_sub_content .blog_body > ul > li {
+  font-size: 14px;
   font-weight: 100;
 }
 
