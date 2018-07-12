@@ -1,6 +1,6 @@
 {   
     "id": 12,
-    "title": "Vim tips: Search and replace",
+    "title": "Vim Tips: Search And Replace",
     "body_html": "<p>When you want to search for a string of text and replace it with another string of text, you can use the syntax :[range]s/search/replace/. The range is optional; if you just run :s/search/replace/, it will search only the current line and match only the first occurrence of a term.</p><h6>VIM: Search and replace syntax</h6><p class=\"syntax\">:[range]s/Search/Replace/CommandFlag</br>:[range]s/Search-Word/Replace-Word/g</br>:%s/Search-Word/Replace-Word/gc</p><h6>Examples</h6><p>To find each occurrence of 'abc' in the current line only, and replace it with 'xyz', enter (first press Esc key and type):</p><p class=\"syntax\">:%s/abc/xyz/g</p><p>To find and replace all occurrences of 'abc1' with 'xy1', enter:</p><p class=\"syntax\">:%s/abc1/xy1/g</p><p>To find and replace all occurrences of 'abc1' with 'xy1', but ask for confirmation first, enter:</p><p class=\"syntax\">:%s/abc1/xy1/gc</p><p>To find and replace all occurrences of case insensitive 'abc1' with 'xy1', enter:</p><p class=\"syntax\">:%s/abc1/xy1/gi</p><p>The above example will find abc1, ABC1, aBc1, ABc1 and so on and replace with xy1. To find and replace all occurrences of 'abc1' with 'xy1' for lines from 3 to 7, enter:</p><p class=\"syntax\">:3,7s/abc1/xy1/g</p>",
     "image": "images/25.jpg"
 }

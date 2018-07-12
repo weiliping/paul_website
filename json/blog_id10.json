@@ -1,6 +1,6 @@
 {   
     "id": 10,
-    "title": "Linux nohup command",
+    "title": "Linux Nohup Command",
     "body_html": "<h6>About nohup</h6><p>You process or executing shell script will get killed when logout from the session or network error occurred. You can use nohup to avoid this. </p> <p> nohup is a POSIX command to ignore the HUP (hangup) signal. The hangup (HUP) signal, which is normally sent to a process to inform it that the user has logged off (or \"hung up\"), is intercepted by nohup, allowing the process to continue running. </p> <h6>Syntax</h6> <p class=\"syntax\">nohup command [command-argument ...]</p> <h6>Examples</h6> <p class=\"syntax\">$ nohup abcd &</br>$ exit</p> <p> Run the command(abcd). It will not receive input. All output, including any error messages, will be written to the file nohup.out in the working directory, or in your home directory. If abcd is running when you log out or close the terminal, abcd will not terminate. </p> <p>When using &, you'll see the bash job ID in brackets, and the process ID (PID) listed after. For example: </p> <p class=\"syntax\">[1] 25132</p> <p> You can use the PID to terminate the process prematurely. For instance, to send it the TERM (terminate) signal with the kill command: </p> <p class=\"syntax\">$ kill -9 25132</p> <h6>Related commands</h6> <p>nohup is often used in combination with the nice command to run processes on a lower priority.</p> <p class=\"syntax\">$ nohup nice abcd &</p>",
     "image": "images/20.jpg"
 }

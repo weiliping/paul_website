@@ -461,7 +461,12 @@ function get_blog_detail(blog_json) {
   var blog_detail = '<a href="#" id="blog_close_id"><span class="icon-close"></span></a>';
   blog_detail += '<div class="blog_header">';
   blog_detail += '<img src="' + blog_json.image + '"/>';
-  blog_detail += '<h4>' + blog_json.title + '</h4>';
+  if(blog_json.title.length > 27){
+    blog_detail += '<h4 class="long_title">' + blog_json.title + '</h4>';
+  }else{
+    blog_detail += '<h4>' + blog_json.title + '</h4>';
+  }
+  
   blog_detail += '</div>';
   blog_detail += '<div class="blog_body" id="blog_body_id">';
   blog_detail += blog_json.body_html;
