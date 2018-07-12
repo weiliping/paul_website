@@ -72,8 +72,20 @@ $(document).on('click', '.blog_link', function (e) {
   showBlogWindow();
 });
 
+function show_blog_content() {
+  if ($("#blog_content_id").is(':hidden')) {
+    $("#blog_content_id").show();
+  }
+}
+
+function hide_blog_content() {
+  if (!$("#blog_content_id").is(':hidden')) {
+    $("#blog_content_id").hide();
+  }
+}
+
 function hideBlogWindow() {
-  $("#blog_content_id").hide();
+  hide_blog_content();
   $('body').css("overflow", "");
   $('body').css({
     "overflow": "auto",
@@ -83,7 +95,7 @@ function hideBlogWindow() {
 }
 
 function showBlogWindow() {
-  $("#blog_content_id").show();
+  show_blog_content();
   $('#main_menu_id').hide();
   $('body').css({
     "overflow": "hidden",
@@ -415,12 +427,33 @@ function get_techniques_html(tech_array) {
   return tech_html;
 }
 
+function show_blog_spinner() {
+  if ($("#blog_spinner_id").is(":hidden")) {
+    $('#blog_spinner_id').parents('.blog_sub_content').css({
+      "background-color": "transparent"
+    })
+    $('#blog_spinner_id').show();
+  }
+}
+
+function hide_blog_spinner() {
+  if (!$("#blog_spinner_id").is(":hidden")) {
+    $('#blog_spinner_id').parents('.blog_sub_content').css({
+      "background-color": ""
+    })
+    $('#blog_spinner_id').hide();
+  }
+}
+
 function blog_detail(id) {
   var url = 'json/blog_id' + id + '.json';
+  $('#blog_sub_content_id').html('');
+  show_blog_spinner();
   $.get(url, {}, function (data) {
     var blog_html = get_blog_detail(data);
     $('#blog_sub_content_id').html(blog_html);
     $("#blog_body_id").niceScroll();
+    hide_blog_spinner();
   });
 }
 
