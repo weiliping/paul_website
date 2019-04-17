@@ -1440,7 +1440,9 @@ footer {
 .blog_content .blog_sub_content .blog_body p a.article_links {
   font-weight: 100;
 }
-
+.blog_content .blog_sub_content .blog_body>ul{
+  -webkit-padding-start: 32px;
+}
 .blog_content .blog_sub_content .blog_body>ul>li {
   font-size: 14px;
   font-weight: 100;
