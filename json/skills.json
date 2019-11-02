@@ -20,7 +20,7 @@
             "link": "https://www.ruby-lang.org/en/",
             "star": "5.0"
         },{
-            "name": "Java(8 years)",
+            "name": "Java(10 years)",
             "link": "https://www.java.com/",
             "star": "5.0"
         },{
@@ -86,11 +86,11 @@
         },{
             "name": "PostGIS",
             "link": "http://postgis.net/",
-            "star": "2.5"
+            "star": "2.0"
         },{
             "name": "MySQL",
             "link": "https://www.mysql.com/",
-            "star": "4.0"
+            "star": "4.5"
         },{
             "name": "Oracle",
             "link": "https://www.oracle.com/database/products.html",
@@ -128,6 +128,10 @@
             "link": "https://spring.io/",
             "star": "3.0"
         },{
+            "name": "Spring Boot",
+            "link": "https://spring.io/",
+            "star": "3.5"
+        },{
             "name": "Apache iBATIS",
             "link": "http://ibatis.apache.org/",
             "star": "3.0"
@@ -161,13 +165,17 @@
             "link": "http://brackets.io/",
             "star": "4.0"
         },{
+            "name": "Sublime Text (3+ years)",
+            "link": "https://www.sublimetext.com/",
+            "star": "4.0"
+        },{
             "name": "IntelliJ IDEA (4 years)",
             "link": "https://www.jetbrains.com/idea/",
             "star": "4.5"
         },{
-            "name": "Visual Studio Code (1 year)",
+            "name": "Visual Studio Code (2+ year)",
             "link": "https://code.visualstudio.com/",
-            "star": "3.0"
+            "star": "3.5"
         },{
             "name": "Notepad++ (8 years)",
             "link": "https://notepad-plus-plus.org/",
@@ -232,6 +240,14 @@
             "name": "TOAD (3 years)",
             "link": "https://www.quest.com/toad/",
             "star": "3.0"
+        },{
+            "name": "Docker (2 years)",
+            "link": "https://www.docker.com/",
+            "star": "2.5"
+        },{
+            "name": "Kubernetes(1+ years)",
+            "link": "https://kubernetes.io/",
+            "star": "2.0"
         }
     ]    
 },{
@@ -242,7 +258,7 @@
             "link": "https://www.microsoft.com/en-us/windows",
             "star": "5.0"
         },{
-            "name": "Mac (6 years)",
+            "name": "Mac (7+ years)",
             "link": "https://www.apple.com/macos/high-sierra/",
             "star": "5.0"
         },{
