@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Generator - Paul Wei</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Description" content="Paul Wei is a responsible full-stack web developer and UX/UI designer. Has more than 13 years experience in developing and designing web app.">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="../css/style.css?101" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/app.css?13" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="sub-section contact">
+        <div id="contact" class="profile">
+          <h2>QR Code Generator</h2>
+          <div class="profile-table" id="contact-table-id">
+            <form action="r/index.php" method="POST" class="contact-form" >
+              <input type="text" class="element" name="qr_str" value="" placeholder="" id="qr_str_id">
+              <a href="#" id="qr-code-generate-btn-id" class="contact-form-btn">GENERATE</a>
+              <div id="spinner-id"><div class="icon-spinner"></div></div>
+              <div id="qr-img-container-id"><div class="qr-img-container"></div></div>
+            </form>
+            <div class="social-content">
+              <div class="social-menu">
+                <ul>
+                  <li><span class="icon-phone"></span> (+86) 137 7607 7118</li>
+                  <li><span class="icon-envelop"></span> paul@amazingwei.com</li>
+                </ul>
+              </div>
+            </div>
+            <div style="clear: both;"></div>
+          </div>    
+        </div>
+      </div>
+    </div>
+    <div class="blog_content" id="blog_content_id" style="display: none;">
+      <div class="blog_sub_content">
+        <div class="blog_row">
+          <div class="blog_table" id="blog_sub_content_id"></div>
+          <div id="blog_spinner_id"><div class="icon-spinner"></div></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="social-row">
+          <a href="https://www.facebook.com/weiliping.cn" class="facebook"><span class="icon-facebook"></span></a>
+          <a href="https://twitter.com/java_2009" class="twitter"><span class="icon-twitter"></span></a>
+          <a href="https://www.linkedin.com/in/paul-wei-64995652/" class="linkedin"><span class="icon-linkedin2"></span></a>
+        </div>
+        <div class="license-row"> @ <span id="year"></span> amazingwei.com </div>
+      </div>
+      <div id="redirect_to_header" class="redirect_to_header" style="display: none;">
+        <a href="#"><span class="icon-circle-right"></span></a>
+      </div>
+    </footer>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/jquery.nicescroll.min.js"></script>
+  <script src="../js/qr.js?11"></script>
+  </body>
+</html>

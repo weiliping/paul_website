@@ -28,6 +28,7 @@ $(document).ready(function () {
     }
   });
 });
+
 $(document).on('click', '#main_menu_id a', function (e) {
   close_menu();
 });
@@ -257,6 +258,7 @@ $(document).on('focus', '.element', function (event) {
 });
 
 $(document).on('keyup', '.element', function (event) {
+  var $obj = $(this);
   if ($obj.hasClass('error') && $.trim($obj.val()) != '') {
     $obj.removeClass('error');
   }
