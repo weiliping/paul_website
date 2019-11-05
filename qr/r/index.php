@@ -21,7 +21,7 @@
     if (isset($_POST['qr_str'])) { 
         //it's very important!
         if (trim($_POST['qr_str']) == '')
-            die('{"error": "data cannot be empty"}');    
+            die('{"error": "QR cannot be empty"}');    
         // user data
         $filename = $PNG_TEMP_DIR.md5($_POST['qr_str'].'_'.$errorCorrectionLevel.'_'.$matrixPointSize).'.png';
         QRcode::png($_POST['qr_str'], $filename, $errorCorrectionLevel, $matrixPointSize, 2);
