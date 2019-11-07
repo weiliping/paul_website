@@ -352,9 +352,11 @@ h6 {
   0% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-20px);
   }
+
   100% {
     transform: translateY(0px);
   }
@@ -728,6 +730,7 @@ h6 {
     -ms-transform: translateY(20px);
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -1095,24 +1098,31 @@ footer {
   0% {
     transform: rotate(0deg);
   }
+
   12.5% {
     transform: rotate(45deg);
   }
+
   25% {
     transform: rotate(90deg);
   }
+
   50% {
     transform: rotate(180deg);
   }
+
   62.5% {
     transform: rotate(225deg);
   }
+
   75% {
     transform: rotate(270deg);
   }
+
   87.5% {
     transform: rotate(315deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -1122,24 +1132,31 @@ footer {
   0% {
     transform: rotate(0deg);
   }
+
   12.5% {
     transform: rotate(45deg);
   }
+
   25% {
     transform: rotate(90deg);
   }
+
   50% {
     transform: rotate(180deg);
   }
+
   62.5% {
     transform: rotate(225deg);
   }
+
   75% {
     transform: rotate(270deg);
   }
+
   87.5% {
     transform: rotate(315deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -1440,9 +1457,11 @@ footer {
 .blog_content .blog_sub_content .blog_body p a.article_links {
   font-weight: 100;
 }
-.blog_content .blog_sub_content .blog_body>ul{
+
+.blog_content .blog_sub_content .blog_body>ul {
   -webkit-padding-start: 32px;
 }
+
 .blog_content .blog_sub_content .blog_body>ul>li {
   font-size: 14px;
   font-weight: 100;
@@ -1469,218 +1488,275 @@ footer {
     height: 32px;
     left: 18px;
   }
+
   #hamburger-menu span {
     height: 3px;
     width: 26px;
   }
+
   #hamburger-menu span:nth-child(1) {
     top: 10px;
   }
+
   #hamburger-menu span:nth-child(2) {
     top: 18px;
   }
+
   #hamburger-menu span:nth-child(3) {
     top: 26px;
   }
+
   #hamburger-menu.open span:nth-child(1) {
     left: 2px;
     top: 6px;
   }
+
   #hamburger-menu.open span:nth-child(3),
   #hamburger-menu.fakeopen span:nth-child(3) {
     top: 25px;
   }
+
   #profile.profile {
     padding-left: 25px;
     padding-right: 25px;
     margin-bottom: 72px;
   }
+
   .sub-section.portfolio {
     padding-left: 25px;
     padding-right: 25px;
   }
+
   .portfolio .slider .sub-slider {
     width: calc(100% - 50px);
     margin-right: 0px;
     padding: 28px 25px 24px 25px;
   }
+
   .main-content .left {
     width: 100%;
     padding-right: 0px;
     border-right: 0px none;
   }
+
   .profile-table .user-col {
     display: none;
   }
+
   .main-content .right {
     width: 100%;
     padding-left: 0px;
     padding-top: 32px;
   }
+
   .main-content .right>.row.padding-top30 {
     margin-top: 10px;
     margin-bottom: 20px;
   }
+
   .main-content .right>.row.padding-top30 label {
     width: 80px;
   }
+
   .main-content .right>.row.padding-top30 .normal-txt {
     width: calc(100% - 80px);
   }
+
   .main-content .right .row {
     float: left;
     width: 100%;
     margin-top: 10px;
   }
+
   .main-content .right .row label {
     float: left;
     width: 64px;
     margin-bottom: 0px;
     line-height: 30px;
   }
+
   .main-content .right .row .normal-txt {
     float: left;
     width: calc(100% - 64px);
     line-height: 30px;
   }
+
   .right .row .normal-txt a.link-email {
     padding-left: 0px;
   }
+
   .right .row .normal-txt a.link-email span {
     display: none;
   }
+
   .right .btn-container {
     margin-top: 28px;
   }
+
   .main-content .sub-section.skills .profile-table {
     padding-left: 25px;
     padding-right: 25px;
   }
+
   .sub-skills .section-row ul li,
   .sub-skills .section-row ul li:nth-child(2n) {
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
   }
+
   .sub-skills .section-row ul li span.skill-star {
     right: 0px;
   }
+
   .sub-skills .section-row ul li:nth-child(2n) span.skill-star {
     right: 0px;
   }
+
   .main-content .sub-section.blog {
     padding-left: 25px;
     padding-right: 25px;
   }
+
   .blog .profile-sub-table .blog-card {
     width: 100%;
     margin-right: 0px;
   }
+
   .blog .profile-sub-table .blog-card .txt-container {
     width: 100%;
   }
+
   .main-content .sub-section.contact {
     padding-left: 25px;
     padding-right: 25px;
   }
+
   .contact .profile .contact-form {
     width: 100%;
   }
+
   .contact .profile .social-content {
     display: none;
   }
+
   .header-content .menu-content.pin-header {
     display: none !important;
   }
+
   .header-content .header-txt h1 {
     font-size: 32px;
   }
+
   .header-content .header-txt h3 {
     font-size: 20px;
   }
+
   .float-down-arrow {
     right: 28px;
     top: calc(100vh - 60px);
     font-size: 32px;
   }
+
   .right .row .normal-txt a.location-link {
     padding-left: 0px;
   }
+
   .right .row .normal-txt a.location-link span.icon-location2 {
     display: none;
   }
+
   .right .btn-container>a {
     background-color: #fff;
     color: #0088cc;
     width: 100%;
   }
+
   .main-content .sub-section.portfolio h2 {
     margin-top: 0px;
   }
+
   .header-content .menu-content {
     width: 160px;
   }
+
   .header-content .menu-content ul {
     left: 52px;
     top: 72px;
   }
+
   .header-content .menu-content ul li>a {
     font-size: 18px;
     line-height: 52px;
   }
+
   #portfolio::before {
     display: none;
   }
+
   .main-content .sub-section h5 {
     line-height: 20px;
     margin-bottom: 28px;
     padding-left: 25px;
     padding-right: 25px;
   }
+
   .left h6,
   .right h6 {
     margin-bottom: 0px;
   }
+
   .contact-form input,
   .contact-form textarea {
     width: calc(100% - 25px);
     float: left;
   }
+
   .contact-form input.email {
     margin-top: 10px;
     margin-left: 0px;
   }
+
   .contact-form textarea.social-msg {
     width: calc(100% - 25px);
   }
+
   .contact .profile a {
     width: 100%;
     background-color: #0088cc;
     border: 1px solid #0088cc;
     text-transform: uppercase;
   }
+
   #spinner-id {
     width: 100%;
   }
+
   .main-content .sub-section.profile-section .profile-table {
     padding-top: 10px;
   }
+
   .main-content .sub-section.profile-section h2 {
     margin-top: 0px;
   }
+
   .portfolio .slider {
     margin-bottom: 72px;
   }
+
   .blog .profile-sub-table {
     padding-bottom: 72px;
   }
+
   #redirect_to_header {
     display: none !important;
   }
+
   .header-content .header-txt .head-icon {
     width: 150px;
     height: 150px;
   }
+
   .blog_content .blog_sub_content {
     height: 100%;
     width: 100%;
@@ -1688,13 +1764,16 @@ footer {
     left: 0px;
     top: 0px;
   }
+
   .blog_content .blog_sub_content .blog_body {
     height: calc(100% - 136px);
   }
+
   .blog_content .blog_sub_content .blog_header h4 {
     font-size: 20px;
     margin-left: 20px;
   }
+
   .blog_content .blog_sub_content .blog_header h4.long_title {
     font-size: 20px;
     width: calc(100% - 82px);
@@ -1707,127 +1786,160 @@ footer {
   #hamburger-menu {
     left: 36px;
   }
+
   .header-content .menu-content {
     left: 0px;
     width: 280px;
   }
+
   .header-content .menu-content ul {
     left: 82px;
     top: 118px;
   }
+
   .header-content .menu-content ul li>a {
     font-size: 18px;
     line-height: 54px;
   }
+
   .main-content .sub-section .profile {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .main-content .left {
     padding-right: 38px;
     width: calc(65% - 38px);
     height: 368px;
   }
+
   .profile-table .user-col .user-sub-col {
     width: 48px;
     height: 48px;
     left: -24px;
   }
+
   .main-content .right {
     padding-left: 36px;
     width: calc(35% - 38px);
   }
+
   .main-content .right .row {
     margin-top: 14px;
   }
+
   .main-content .right .row.btn-container {
     margin-top: 42px;
   }
+
   .portfolio .slider .sub-slider {
     width: calc(48% - 64px);
     margin-right: 4%;
     margin-bottom: 28px;
   }
+
   .portfolio .slider :nth-child(3n+3) {
     margin-right: 4%;
   }
+
   .portfolio .slider :nth-child(2n+2) {
     margin-right: 0px;
   }
+
   .sub-skills .section-row ul li:nth-child(2n) {
     padding-left: 60px;
     width: calc(50% - 98px);
   }
+
   .blog .profile-sub-table .blog-card {
     width: 48%;
     margin-right: 4%;
     margin-bottom: 28px;
   }
+
   .blog .profile-sub-table :nth-child(2n+2) {
     margin-right: 0px;
   }
+
   .main-content .sub-section h5 {
     font-size: 16px;
     line-height: 22px;
   }
+
   .sub-skills .section-row ul li {
     width: calc(50% - 18px);
     padding-left: 18px;
     padding-right: 18px;
   }
+
   .sub-skills .section-row ul li:nth-child(2n) {
     padding-left: 18px;
     width: calc(50% - 54px);
   }
+
   .sub-skills .section-row ul li span.skill-label {
     font-size: 15px;
   }
+
   .sub-skills .section-row ul li a {
     font-size: 15px;
   }
+
   .sub-skills .section-row ul li span.skill-star>span {
     font-size: 17px;
   }
+
   .sub-skills .section-row ul li:hover span.skill-star>span {
     font-size: 18px;
   }
+
   .contact .profile .social-content {
     padding-left: 42px;
     width: 35%;
   }
+
   .left p {
     font-size: 14px;
     line-height: 22px;
   }
+
   .right .row .normal-txt a.location-link {
     font-size: 13px;
   }
+
   .left h6,
   .right h6 {
     font-size: 22px;
   }
+
   .main-content .sub-section.profile-section h2 {
     margin-top: 0px;
   }
+
   .main-content .sub-section.profile-section .profile-table {
     padding-top: 40px;
   }
+
   .right .btn-container>a {
     width: 200px;
     height: 42px;
     line-height: 44px;
   }
+
   #profile.profile {
     margin-bottom: 128px;
   }
+
   #redirect_to_header {
     display: none !important;
   }
+
   .header-content .menu-content.pin-header ul {
     padding-left: 20px;
     padding-right: 20px;
     width: calc(100% - 40px);
   }
+
   .header-content .header-txt .head-icon {
     width: 160px;
     height: 160px;
@@ -1839,27 +1951,33 @@ footer {
     padding-left: 40px;
     padding-right: 40px;
   }
+
   .main-content .left {
     width: calc(65% - 58px);
     padding-right: 58px;
     height: 358px;
   }
+
   .right .btn-container {
     margin-top: 46px;
   }
+
   .main-content .right {
     padding-left: 58px;
     width: calc(35% - 60px);
   }
+
   .main-content .sub-section.profile-section .profile-table {
     margin-left: 30px;
     margin-right: 30px;
   }
+
   .portfolio .slider {
     padding-left: 30px;
     padding-right: 30px;
     width: calc(100% - 60px);
   }
+
   .portfolio .slider .sub-slider {
     width: calc(48% - 68px);
     margin-right: 4%;
@@ -1867,45 +1985,55 @@ footer {
     padding-right: 32px;
     margin-bottom: 32px;
   }
+
   .portfolio .slider :nth-child(2n+2) {
     margin-right: 0px;
   }
+
   .blog .profile-sub-table {
     padding-left: 30px;
     padding-right: 30px;
     width: calc(100% - 60px);
   }
+
   .blog .profile-sub-table .blog-card {
     width: 48%;
     margin-right: 4%;
     margin-bottom: 32px;
   }
+
   .blog .profile-sub-table :nth-child(2n+2) {
     margin-right: 0px;
   }
+
   .main-content .sub-section.contact .profile,
   .main-content .sub-section.skills .profile {
     padding-left: 70px;
     padding-right: 70px;
   }
+
   .sub-skills .section-row ul li:nth-child(2n) {
     padding-left: 76px;
     width: calc(50% - 100px);
     padding-right: 24px;
   }
+
   .sub-skills .section-row ul li {
     width: calc(50% - 46px);
     padding-left: 24px;
     padding-right: 22px;
   }
+
   .sub-skills .section-row ul li:nth-child(2n) span.skill-star {
     right: 24px;
   }
+
   .header-content .menu-content.pin-header ul {
     padding-left: 70px;
     padding-right: 70px;
     width: calc(100% - 140px);
   }
+
   .header-content .header-txt .head-icon {
     width: 160px;
     height: 160px;
@@ -1916,47 +2044,153 @@ footer {
   .sub-skills .section-row ul li span.skill-label {
     font-size: 14px;
   }
+
   .sub-skills .section-row ul li a {
     font-size: 14px;
   }
+
   .portfolio .slider .sub-slider p {
     font-size: 13px;
     line-height: 22px;
   }
+
   .blog .profile-sub-table .blog-card .txt-container {
     padding: 22px 12px 10px 18px;
   }
+
   .blog .profile-sub-table .blog-card .txt-container p {
     font-size: 12px;
     line-height: 16px;
     margin-top: 10px;
   }
+
   .blog .profile-sub-table .blog-card .txt-container h6 {
     line-height: 14px;
   }
+
   .main-content .sub-section h5 {
     padding-left: 25px;
     padding-right: 25px;
   }
+
   .right .row .normal-txt a.location-link {
     line-height: 18px;
     display: inline-grid;
   }
+
   .header-content .header-txt .head-icon {
     width: 120px;
     height: 120px;
   }
-  .blog_content .blog_sub_content .blog_body{
+
+  .blog_content .blog_sub_content .blog_body {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .blog_content .blog_sub_content .blog_header h4{
+
+  .blog_content .blog_sub_content .blog_header h4 {
     font-size: 18px;
     margin-left: 12px;
   }
-  .blog_content .blog_sub_content .blog_header{
+
+  .blog_content .blog_sub_content .blog_header {
     padding-left: 10px;
     padding-right: 10px;
     width: calc(100% - 20px);
   }
+}
+
+body.qr-body {
+  background: #fcfcfc;
+}
+
+.qr-body header {
+  background-color: #fcfcfc;
+  height: 62px;
+  border-bottom: 1px solid #E6EAEA;
+}
+
+.qr-body header .header-container {
+  max-width: 1024px;
+  margin: auto;
+  display: block;
+  padding-top: 6px;
+}
+
+.qr-body header .header-container .header-img-container {
+  display: inline;
+}
+
+.qr-body header .header-container .header-img-container a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.qr-body header .header-container .header-img-container a>img{
+  width: 100%;
+}
+.qr-body .main-content {
+  background-color: #0088cc;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 42px;
+  max-width: 1024px;
+  height: calc(100% - 196px);
+}
+
+.qr-body .main-content .sub-section {
+  background-color: #ffffff;
+  display: inline-block;
+  margin-top: 48px;
+  margin-left: 48px;
+  width: calc(100% - 48px);
+  height: calc(100% - 48px);
+}
+
+.qr-body .main-content .sub-section .qr-form-page{
+  display: inline-block;
+  width: 100%;
+}
+
+.qr-body .main-content .sub-section .qr-form-page .qr-form-container{
+  display: inline-block;
+  width: 100%;
+}
+.qr-body .main-content .sub-section .qr-form-page .qr-form-container .qr-form-left{
+  float: left;
+  width: 50%;
+}
+
+.qr-body .main-content .sub-section .qr-form-page .qr-form-container .qr-form-right{
+  float: right;
+  width: 50%;
+  position: relative;
+}
+
+.qr-form-right .form-img-container{
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+.qr-form-right .form-img-container > img{
+  height: 100%;
+}
+
+.qr-form-right .white-bg{
+  position: absolute;
+  width: 44px;
+  background: #ffffff;
+  position: absolute;
+  top: -48px;
+  height: 48px;
+  right: 0px;
+}
+
+.qr-body footer {
+  /*display: none;*/
 }
