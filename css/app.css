@@ -2102,6 +2102,7 @@ footer {
 
 body.qr-body {
   background: #fcfcfc;
+  position: relative;
 }
 
 .qr-body header {
@@ -2131,16 +2132,18 @@ body.qr-body {
   overflow: hidden;
 }
 
-.qr-body header .header-container .header-img-container a>img{
+.qr-body header .header-container .header-img-container a>img {
   width: 100%;
 }
+
 .qr-body .main-content {
   background-color: #0088cc;
   margin-left: auto;
   margin-right: auto;
   margin-top: 42px;
+  margin-bottom: 42px;
   max-width: 1024px;
-  height: calc(100% - 196px);
+  height: calc(100% - 238px);
 }
 
 .qr-body .main-content .sub-section {
@@ -2152,36 +2155,43 @@ body.qr-body {
   height: calc(100% - 48px);
 }
 
-.qr-body .main-content .sub-section .qr-form-page{
+.qr-body .main-content .sub-section .qr-form-page {
   display: inline-block;
   width: 100%;
-}
-
-.qr-body .main-content .sub-section .qr-form-page .qr-form-container{
-  display: inline-block;
-  width: 100%;
-}
-.qr-body .main-content .sub-section .qr-form-page .qr-form-container .qr-form-left{
-  float: left;
-  width: 50%;
-}
-
-.qr-body .main-content .sub-section .qr-form-page .qr-form-container .qr-form-right{
-  float: right;
-  width: 50%;
-  position: relative;
-}
-
-.qr-form-right .form-img-container{
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
-}
-.qr-form-right .form-img-container > img{
   height: 100%;
 }
 
-.qr-form-right .white-bg{
+.qr-body .main-content .sub-section .qr-form-page .qr-form-container {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.qr-body .main-content .sub-section .qr-form-page .qr-form-container .qr-form-left {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.qr-body .main-content .sub-section .qr-form-page .qr-form-container .qr-form-right {
+  float: right;
+  width: 50%;
+  position: relative;
+  height: 100%;
+}
+
+.qr-form-right .form-img-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.qr-form-right .form-img-container>img {
+  height: 100%;
+}
+
+.qr-form-right .white-bg {
   position: absolute;
   width: 44px;
   background: #ffffff;
@@ -2193,4 +2203,88 @@ body.qr-body {
 
 .qr-body footer {
   /*display: none;*/
+  position: relative;
 }
+
+.qr-body .header-content {
+  min-height: 100%;
+  position: absolute;
+  left: 0px;
+  width: 320px;
+  top: 0px;
+}
+
+.qr-body #hamburger-menu {
+  top: 16px;
+  left: 20px;
+}
+
+.qr-body #hamburger-menu span {
+  background-color: #333333;
+
+}
+
+.qr-body #hamburger-menu.open {
+  background-color: transparent;
+}
+
+.qr-body .header-content .menu-content {
+  background: #f4f7f6;
+}
+
+.qr-body .header-content .menu-content ul li>a {
+  font-size: 17px;
+  font-weight: bold;
+  position: relative;
+  display: block;
+  padding: 24px 36px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #202121;
+  cursor: pointer;
+  background: #f4f7f6;
+  border-bottom: 1px solid #E6EAEA;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.qr-body .main-content .sub-section h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.qr-form-container .element{
+  border: 1px solid #0088cc;
+    /* border-radius: 3px; */
+    height: 38px;
+    width: calc(100% - 206px);
+    margin-left: 42px;
+    /* display: block; */
+    float: left;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.qr-body .contact-form-btn {
+  background: #0088cc;
+  text-decoration: none;
+  margin-left: 0px;
+  float: left;
+  margin-top: 0px;
+  border: 1px solid #0088cc;
+  font-size: 14px;
+  font-weight: bold;
+  width: 108px;
+  border-bottom-left-radius: unset;
+  border-top-left-radius: unset;
+}
+
+.qr-form-left>p {
+  font-size: 12px;
+  color: #5f5f5f;
+  text-align: center;
+  line-height: 16px;
+  padding-left: 48px;
+  padding-right: 66px;
+  font-weight: 500;
+}
+

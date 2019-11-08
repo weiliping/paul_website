@@ -9,23 +9,36 @@
     content="Paul Wei is a responsible full-stack web developer and UX/UI designer. Has more than 13 years experience in developing and designing web app.">
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link href="../css/style.css?101" rel="stylesheet" type="text/css" media="all">
-  <link href="../css/app.css?07" rel="stylesheet" type="text/css" media="all">
+  <link href="../css/app.css?09" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body class="qr-body">
   <header>
     <div class="header-container">
       <div class="header-img-container">
-        <a href="http://www.amazingwei.com" class="home-img"><img src="../images/head_icon_180.jpg"/></a>
+        <a href="http://www.amazingwei.com" class="home-img"><img src="../images/head_icon_180.jpg" /></a>
       </div>
     </div>
   </header>
   <div class="main-content">
+    <div class="header-content" >
+      <div id="hamburger-menu" class=""><span></span><span></span><span></span> Menu </div>
+      <div class="menu-content" id="main_menu_id" style="display: none; opacity: 0;">
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="sub-section">
       <div id="qr-form-id" class="qr-form-page">
         <div class="qr-form-container" id="contact-table-id">
           <div class="qr-form-left">
             <h2>QR Code Generator</h2>
+            <p>Enter your URL, text or email here. Your QR Code will be generated after clicking GENERATE.</p>
             <form action="r/index.php" method="POST" class="qr-form">
               <input type="text" class="element" name="qr_str" value="" placeholder="" id="qr_str_id">
               <a href="#" id="qr-code-generate-btn-id" class="contact-form-btn">GENERATE</a>
@@ -38,7 +51,7 @@
             </form>
           </div>
           <div class="qr-form-right">
-            <div class="form-img-container"><img src="../images/header-2.jpg"/></div>
+            <div class="form-img-container"><img src="../images/header-2.jpg" /></div>
             <div class="white-bg">&nbsp;</div>
           </div>
           <div style="clear: both;"></div>
@@ -62,7 +75,7 @@
   </footer>
   <script src="../js/jquery-3.3.1.min.js"></script>
   <script src="../js/jquery.nicescroll.min.js"></script>
-  <script src="../js/qr.js?11"></script>
+  <script src="../js/qr.js?12"></script>
 </body>
 
 </html>
