@@ -9,7 +9,7 @@
     content="Paul Wei is a responsible full-stack web developer and UX/UI designer. Has more than 13 years experience in developing and designing web app.">
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link href="../css/style.css?101" rel="stylesheet" type="text/css" media="all">
-  <link href="../css/app.css?09" rel="stylesheet" type="text/css" media="all">
+  <link href="../css/app.css?20" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body class="qr-body">
@@ -37,16 +37,17 @@
       <div id="qr-form-id" class="qr-form-page">
         <div class="qr-form-container" id="contact-table-id">
           <div class="qr-form-left">
+            <div class="brand">PW</div>
             <h2>QR Code Generator</h2>
-            <p>Enter your URL, text or email here. Your QR Code will be generated after clicking GENERATE.</p>
+            <p>Your QR Code will be generated after clicking "Generate".</p>
             <form action="r/index.php" method="POST" class="qr-form">
-              <input type="text" class="element" name="qr_str" value="" placeholder="" id="qr_str_id">
-              <a href="#" id="qr-code-generate-btn-id" class="contact-form-btn">GENERATE</a>
+              <input type="text" class="element" name="qr_str" value="" placeholder="URL, text or email" id="qr_str_id">
+              <a href="#" id="qr-code-generate-btn-id" class="contact-form-btn">Generate</a>
               <div id="spinner-id">
                 <div class="icon-spinner"></div>
               </div>
-              <div id="qr-img-container-id">
-                <div class="qr-img-container"></div>
+              <div class="qr-img-container">
+                <div class="qr-img-sub" id="qr-img-container-id"></div>
               </div>
             </form>
           </div>

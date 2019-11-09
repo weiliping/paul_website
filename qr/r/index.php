@@ -17,7 +17,7 @@
     //processing form input
     //remember to sanitize user input in real-life solution !!!
     $errorCorrectionLevel = 'L';
-    $matrixPointSize = 10;
+    $matrixPointSize = 8;
     if (isset($_POST['qr_str'])) { 
         //it's very important!
         if (trim($_POST['qr_str']) == '')
