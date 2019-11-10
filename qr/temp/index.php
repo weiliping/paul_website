@@ -1,3 +1,3 @@
 <?php
-    echo 'Permission Denied. <a href="http://wwww.amazingwei.com">Paul Wei</a>'
+    echo 'Permission Denied. <a href="http://www.amazingwei.com">Paul Wei</a>'
 ?>
