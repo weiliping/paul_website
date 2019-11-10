@@ -2163,10 +2163,10 @@ body.qr-body {
   background-color: #0088cc;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 48px;
+  margin-top: 32px;
   margin-bottom: 48px;
   max-width: 1024px;
-  height: calc(100% - 247px);
+  height: calc(100% - 231px);
   position: relative;
 }
 
