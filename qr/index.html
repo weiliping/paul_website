@@ -9,36 +9,48 @@
     content="Paul Wei is a responsible full-stack web developer and UX/UI designer. Has more than 13 years experience in developing and designing web app.">
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link href="../css/style.css?101" rel="stylesheet" type="text/css" media="all">
-  <link href="../css/app.css?20" rel="stylesheet" type="text/css" media="all">
+  <link href="../css/app.css?25" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body class="qr-body">
   <header>
     <div class="header-container">
+      <span>QR Code Generator</span>
       <div class="header-img-container">
         <a href="http://www.amazingwei.com" class="home-img"><img src="../images/head_icon_180.jpg" /></a>
+      </div>
+      <div class="header-content" >
+        <div id="hamburger-menu" class=""><span></span><span></span><span></span> <p>Menu</p> </div>
+        <div class="menu-content" id="main_menu_id" style="display: none; opacity: 0;">
+          <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
   <div class="main-content">
-    <div class="header-content" >
-      <div id="hamburger-menu" class=""><span></span><span></span><span></span> Menu </div>
-      <div class="menu-content" id="main_menu_id" style="display: none; opacity: 0;">
-        <ul>
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
     <div class="sub-section">
+      <div class="sub-title">
+        <div class="sub-title-container">
+          <a href="">Profile</a>
+          <a href="">Portfolio</a>
+          <a href="">Skills</a>
+          <a href="">Blog</a>
+          <a href="">Contact</a>
+          <span class="contact_text">Who is?</span>
+          <span class="contact_link">Visit Site</span>
+        </div>
+      </div>
       <div id="qr-form-id" class="qr-form-page">
         <div class="qr-form-container" id="contact-table-id">
           <div class="qr-form-left">
             <div class="brand">PW</div>
-            <h2>QR Code Generator</h2>
+            <h2>Create Your QR Code Here</h2>
             <p>Your QR Code will be generated after clicking "Generate".</p>
             <form action="r/index.php" method="POST" class="qr-form">
               <input type="text" class="element" name="qr_str" value="" placeholder="URL, text or email" id="qr_str_id">
