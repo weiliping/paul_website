@@ -237,8 +237,8 @@ h6 {
 }
 
 #hamburger-menu {
-  top: 48px;
-  left: 48px;
+  top: 36px;
+  left: 36px;
   width: 26px;
   height: 18px;
   z-index: 999;
@@ -389,7 +389,7 @@ h6 {
   padding-left: 20px;
   -webkit-padding-start: 0px;
   top: 128px;
-  left: 106px;
+  left: 72px;
   position: absolute;
   z-index: 33;
 }
