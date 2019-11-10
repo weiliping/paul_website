@@ -2260,9 +2260,9 @@ body.qr-body {
 .qr-body .main-content .sub-section .qr-form-page .qr-form-container .qr-form-left {
   float: left;
   width: 50%;
-  height: 100%;
+  height: calc(100% - 144px);
   position: relative;
-  padding-top: 128px;
+  padding-top: 144px;
 }
 
 .qr-body .main-content .sub-section .qr-form-page .qr-form-container .qr-form-right {
@@ -2422,7 +2422,7 @@ body.qr-body {
   color: #ffffff;
   position: absolute;
   left: calc(50% - 25px);
-  top: 88px;
+  top: 100px;
   border-radius: 50%;
 }
 
@@ -2527,7 +2527,7 @@ body.qr-body {
   top: -70px;
 }
 
-.qr-body .qr-img-container .qr-img-sub>img {
+.qr-body .qr-img-container .qr-img-sub img.qr-img {
   width: 200px;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .14), 0 6px 10px 0 rgba(0, 0, 0, .098), 0 1px 18px 0 rgba(0, 0, 0, .084);
 }
@@ -2574,4 +2574,10 @@ body.qr-body {
   background: #202121;
   opacity: 0.5;
   z-index: 39;
+}
+
+.qr-body .qr-img-link {
+  text-decoration: none;
+  height: 200px;
+  display: inline-block;
 }

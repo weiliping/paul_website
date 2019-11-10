@@ -11,7 +11,9 @@ $(document).on('click', '#qr-code-generate-btn-id', function (event) {
   remove_inside_form();
   hide_img_cover();
   $.post($form.attr('action'), $form.serialize(), function (data) {
-    var $img_html = '<img src="' + data["file_name"] + '" class="qr-img"/>';
+    var $img_html = '<a href="' + data["file_name"] + '" class="qr-img-link" download>';
+      $img_html += '<img src="' + data["file_name"] + '" class="qr-img"/>';
+      $img_html += '</a>';
     $('#qr-img-container-id').html($img_html);
     check_img_position();
     hide_spinner();
@@ -21,7 +23,7 @@ $(document).on('click', '#qr-code-generate-btn-id', function (event) {
 });
 
 function check_img_position(){
-  if ( $('#qr-form-id').height() > 548) {
+  if ( $('#qr-form-id').height() > 556) {
     add_inside_form();  
   } else {
     remove_inside_form();
@@ -62,6 +64,7 @@ function add_inside_form() {
     $('#qr-img-container-id').addClass('inside-form')
   }
 }
+
 function remove_inside_form() {
   if($('#qr-img-container-id').hasClass('inside-form')) {
     $('#qr-img-container-id').removeClass('inside-form')
