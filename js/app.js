@@ -55,9 +55,9 @@ $(document).keyup(function (e) {
 
 $(document).on('click', '#hamburger-menu', function (e) {
   if (!$(this).hasClass('open')) {
-    show_menu($(this))
+    show_menu($(this));
   } else {
-    hide_menu($(this))
+    hide_menu($(this));
   }
 });
 

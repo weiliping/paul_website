@@ -2303,6 +2303,7 @@ body.qr-body {
   left: 0px;
   width: 320px;
   top: 0px;
+  z-index: 501;
 }
 
 .qr-body #hamburger-menu:hover span {
@@ -2507,14 +2508,70 @@ body.qr-body {
   display: inline;
 }
 
+.qr-body .qr-img-container .qr-img-sub.inside-form {
+  position: unset;
+  right: unset;
+  top: unset;
+  margin-top: 16px;
+  width: 100%;
+}
+
 .qr-body .qr-img-container .qr-img-sub {
   display: inline-block;
-  width: 100%;
   text-align: center;
-  margin-top: 18px;
+  position: absolute;
+  right: calc(50% - 28px);
+  width: 200px;
+  z-index: 503;
+  right: calc(100px - 90%);
+  top: -70px;
 }
 
 .qr-body .qr-img-container .qr-img-sub>img {
   width: 200px;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .14), 0 6px 10px 0 rgba(0, 0, 0, .098), 0 1px 18px 0 rgba(0, 0, 0, .084);
+}
+
+.corver_page {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #202121;
+  opacity: 0.2;
+  z-index: 500;
+  display: none;
+}
+
+.qr-body .icon-spinner {
+  color: #0088cc;
+}
+
+.qr-body #spinner-id {
+  width: 36px;
+  height: 36px;
+  top: 4px;
+  left: calc(50% - 18px);
+  bottom: unset;
+  background-color: unset;
+  border: 0px none;
+}
+
+.qr-body .qr-form {
+  position: relative;
+}
+
+.qr-body .open>.image_cover {
+  display: block;
+}
+
+.qr-body .image_cover {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #202121;
+  opacity: 0.5;
+  z-index: 39;
 }
