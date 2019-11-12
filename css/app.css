@@ -1,8 +1,8 @@
 html,
 body {
   margin: 0px;
-  /* font-family: 'Open Sans', sans-serif !important; */
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Calibri Light, Roboto, sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
+  /* font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Calibri Light, Roboto, sans-serif; */
   height: 100%;
   width: 100%;
   color: #434242;
@@ -400,7 +400,7 @@ h6 {
 }
 
 .header-content .menu-content ul li>a {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 100;
   color: #fff;
   line-height: 66px;
@@ -899,9 +899,14 @@ footer {
 }
 
 .contact-form textarea.social-msg::-webkit-input-placeholder,
+.contact-form textarea.social-msg::-moz-placeholder,
+.contact-form textarea.social-msg:-moz-placeholder,
+.contact-form textarea.social-msg:-ms-input-placeholder,
+.contact-form textarea.social-msg::placeholder,
 .contact-form input::-webkit-input-placeholder {
   -webkit-text-security: none;
   color: #f2f2f2;
+  font-size: 14px;
   pointer-events: none !important;
 }
 
@@ -2104,7 +2109,7 @@ footer {
 body.qr-body {
   background: #fcfcfc;
   position: relative;
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Calibri Light, Roboto, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Calibri Light, Roboto, sans-serif; */
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -2190,6 +2195,7 @@ body.qr-body {
   -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .14), 0 6px 10px 0 rgba(0, 0, 0, .098), 0 1px 18px 0 rgba(0, 0, 0, .084);
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .14), 0 6px 10px 0 rgba(0, 0, 0, .098), 0 1px 18px 0 rgba(0, 0, 0, .084);
 }
+
 .qr-body .main-content .sub-title .sub-title-container span.contact_link:hover{
   cursor: pointer;
   border: 1px solid #0088cc;
@@ -2305,15 +2311,17 @@ body.qr-body {
   top: 0px;
   z-index: 501;
 }
-
-.qr-body #hamburger-menu:hover span {
-  background-color: #006ea5;
+.qr-body #hamburger-menu.open span{
+  background-color: #ffffff;
 }
-
 
 .qr-body #hamburger-menu {
   top: 16px;
   left: 20px;
+  width: 68px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 30px;
 }
 
 .qr-body #hamburger-menu span {
@@ -2345,12 +2353,7 @@ body.qr-body {
   background-color: transparent;
 }
 
-.qr-body .header-content .menu-content {
-  background: #f0f0f0;
-}
-
 .qr-body .header-content .menu-content ul li>a:hover {
-  background: #ffffff;
   cursor: pointer;
   color: #0088cc;
   outline: none;
@@ -2360,11 +2363,9 @@ body.qr-body {
   font-size: 18px;
   position: relative;
   display: block;
-  font-weight: 400;
-  color: #202121;
+  font-weight: 100;
+  color: #ffffff;
   cursor: pointer;
-  background: #f0f0f0;
-  border-bottom: 1px solid #E6EAEA;
   transition: background 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
   height: 48px;
   line-height: 48px;
@@ -2376,17 +2377,14 @@ body.qr-body {
   display: none;
 }
 
-.qr-body #hamburger-menu:hover>p {
-  color: #006ea5;
-}
-
 .qr-body #hamburger-menu>p {
   color: #333333;
   font-size: 10px;
-  left: 42px;
-  top: -5px;
-  position: absolute;
   text-transform: uppercase;
+  float: right;
+  margin-block-start: auto;
+  margin-block-end: auto;
+  line-height: 30px;
 }
 
 .qr-body .header-content .menu-content {
