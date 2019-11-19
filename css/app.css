@@ -2290,21 +2290,18 @@ body.qr-body {
   }
 
   .qr-body .main-content {
-    min-height: 700px;
+    min-height: 768px;
     margin-top: 0px;
     margin-bottom: 0px;
   }
 
   .qr-body .main-content .sub-section {
     width: calc(100% - 60px);
+    margin-left: 30px; 
   }
 
   .qr-body .main-content .sub-title {
     display: none;
-  }
-
-  .qr-body .main-content .sub-section {
-    width: calc(100% - 60px);
   }
 
   .qr-body .main-content .sub-section .qr-form-page .qr-form-container .qr-form-left {
@@ -2333,6 +2330,31 @@ body.qr-body {
 
   .qr-body #hamburger-menu>p {
     display: none;
+  }
+
+  .qr-body footer {
+    background: #f0f0f0;
+    color: rgba(0, 0, 0, .05);
+    border-top: 1px solid rgba(31, 31, 31, 0.2);
+    margin-top: -89px;
+    margin-left: 30px;
+    width: calc(100% - 60px);
+  }
+
+  .qr-body footer .social-row a {
+    background-color: rgba(41, 41, 41, 0.8);
+    color: #ffffff;
+    line-height: 28px;
+  }
+
+  .qr-body footer .license-row {
+    color: rgba(41, 41, 41, 0.8);
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .qr-body #hamburger-menu {
+    left: 12px;
   }
 }
 
