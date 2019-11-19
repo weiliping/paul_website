@@ -1671,14 +1671,14 @@ body.qr-body {
 
 .qr-form-right .form-img-container .qr-img-sub {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 232px;
+  height: 232px;
   margin: auto;
   background: transparent;
   overflow: hidden;
   position: absolute;
-  top: calc(50% - 100px);
-  left: calc(50% - 100px);
+  top: calc(50% - 116px);
+  left: calc(50% - 116px);
   z-index: 502;
 }
 
