@@ -16,12 +16,12 @@
     "title": "Technical Skills",
     "data":[
         {
-            "name": "Ruby(5 years)",
-            "link": "https://www.ruby-lang.org/en/",
+            "name": "Java(12+ years)",
+            "link": "https://www.java.com/",
             "star": "5.0"
         },{
-            "name": "Java(10 years)",
-            "link": "https://www.java.com/",
+            "name": "Ruby(5 years)",
+            "link": "https://www.ruby-lang.org/en/",
             "star": "5.0"
         },{
             "name": "PHP(3 years)",
@@ -169,7 +169,7 @@
             "link": "https://www.sublimetext.com/",
             "star": "4.0"
         },{
-            "name": "IntelliJ IDEA (4 years)",
+            "name": "IntelliJ IDEA (8+ years)",
             "link": "https://www.jetbrains.com/idea/",
             "star": "4.5"
         },{
@@ -241,11 +241,11 @@
             "link": "https://www.quest.com/toad/",
             "star": "3.0"
         },{
-            "name": "Docker (2 years)",
+            "name": "Docker (3 years)",
             "link": "https://www.docker.com/",
             "star": "2.5"
         },{
-            "name": "Kubernetes(1+ years)",
+            "name": "Kubernetes(2+ years)",
             "link": "https://kubernetes.io/",
             "star": "2.0"
         }
@@ -258,7 +258,7 @@
             "link": "https://www.microsoft.com/en-us/windows",
             "star": "5.0"
         },{
-            "name": "Mac (7+ years)",
+            "name": "Mac (9+ years)",
             "link": "https://www.apple.com/macos/high-sierra/",
             "star": "5.0"
         },{

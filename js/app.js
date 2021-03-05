@@ -27,6 +27,7 @@ $(document).ready(function () {
       }
     }
   });
+  fillYearsNum();
 });
 
 $(document).on('click', '#main_menu_id a', function (e) {
@@ -43,6 +44,10 @@ function close_menu() {
       top: 'auto'
     });
   }
+}
+
+function fillYearsNum() {
+  $('#yearsNum').text((new Date).getFullYear() - 2005);
 }
 
 $(document).keyup(function (e) {
